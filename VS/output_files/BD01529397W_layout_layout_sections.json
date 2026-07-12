@@ -1,0 +1,545 @@
+{
+  "pdf": "BD01529397W_layout.pdf",
+  "layout_count": 6,
+  "layouts": [
+    {
+      "page": 1,
+      "layout": 1,
+      "layout_on_page": 1,
+      "bbox": {
+        "x0": 61.92,
+        "top": 220.76,
+        "x1": 503.88,
+        "bottom": 260.2,
+        "width_mm": 155.9,
+        "height_mm": 13.9
+      },
+      "section_direction": "left_to_right",
+      "divider_positions": [
+        263.17,
+        283.02,
+        302.86
+      ],
+      "part_count": 4,
+      "parts": {
+        "part_1": {
+          "part": 1,
+          "bbox": {
+            "x0": 62.92,
+            "top": 221.76,
+            "x1": 262.17,
+            "bottom": 259.2,
+            "width_mm": 70.3,
+            "height_mm": 13.2
+          },
+          "text": "body/gusset/corps/gousset/cuerpo/inserto/corpo/tassello/面料/内裆 57%\ncotton/coton/algodón/cotone/棉 38% modal/莫代尔 5% elastane/élasthanne/\nelastano/elastan/氨纶 elastic/élastique/banda elástica/elastico/松紧带 48%\npolyamide/poliamida/poliammide/锦纶 37% polyester/poliéster/poliestere/\n15% elastane/élasthanne/elastano/elastan/氨纶 exclusive of\n聚酯纤维",
+          "lines": [
+            "body/gusset/corps/gousset/cuerpo/inserto/corpo/tassello/面料/内裆 57%",
+            "cotton/coton/algodón/cotone/棉 38% modal/莫代尔 5% elastane/élasthanne/",
+            "elastano/elastan/氨纶 elastic/élastique/banda elástica/elastico/松紧带 48%",
+            "polyamide/poliamida/poliammide/锦纶 37% polyester/poliéster/poliestere/",
+            "15% elastane/élasthanne/elastano/elastan/氨纶 exclusive of",
+            "聚酯纤维"
+          ]
+        },
+        "part_2": {
+          "part": 2,
+          "bbox": {
+            "x0": 264.17,
+            "top": 221.76,
+            "x1": 282.02,
+            "bottom": 259.2,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "2",
+          "lines": [
+            "2"
+          ]
+        },
+        "part_3": {
+          "part": 3,
+          "bbox": {
+            "x0": 284.02,
+            "top": 221.76,
+            "x1": 301.86,
+            "bottom": 259.2,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "3",
+          "lines": [
+            "3"
+          ]
+        },
+        "part_4": {
+          "part": 4,
+          "bbox": {
+            "x0": 303.86,
+            "top": 221.76,
+            "x1": 502.88,
+            "bottom": 259.2,
+            "width_mm": 70.2,
+            "height_mm": 13.2
+          },
+          "text": "SHORTIE/\nSHORTIE",
+          "lines": [
+            "SHORTIE/",
+            "SHORTIE"
+          ]
+        }
+      }
+    },
+    {
+      "page": 1,
+      "layout": 2,
+      "layout_on_page": 2,
+      "bbox": {
+        "x0": 61.92,
+        "top": 273.31,
+        "x1": 503.88,
+        "bottom": 312.74,
+        "width_mm": 155.9,
+        "height_mm": 13.9
+      },
+      "section_direction": "left_to_right",
+      "divider_positions": [
+        263.17,
+        283.01,
+        302.86
+      ],
+      "part_count": 4,
+      "parts": {
+        "part_1": {
+          "part": 1,
+          "bbox": {
+            "x0": 62.92,
+            "top": 274.31,
+            "x1": 262.17,
+            "bottom": 311.74,
+            "width_mm": 70.3,
+            "height_mm": 13.2
+          },
+          "text": "decoration/sauf décoration/no incluye la decoración/\nDEIJN\nesclusa la decorazione/装饰除外\nDEIJN\nRN54867 CA67359 ID# 36014990 416213-SPT 07 26\nDEIJN",
+          "lines": [
+            "decoration/sauf décoration/no incluye la decoración/",
+            "DEIJN",
+            "esclusa la decorazione/装饰除外",
+            "DEIJN",
+            "RN54867 CA67359 ID# 36014990 416213-SPT 07 26",
+            "DEIJN"
+          ]
+        },
+        "part_2": {
+          "part": 2,
+          "bbox": {
+            "x0": 264.17,
+            "top": 274.31,
+            "x1": 282.01,
+            "bottom": 311.74,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "583-1B\n4",
+          "lines": [
+            "583-1B",
+            "4"
+          ]
+        },
+        "part_3": {
+          "part": 3,
+          "bbox": {
+            "x0": 284.01,
+            "top": 274.31,
+            "x1": 301.86,
+            "bottom": 311.74,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "1",
+          "lines": [
+            "1"
+          ]
+        },
+        "part_4": {
+          "part": 4,
+          "bbox": {
+            "x0": 303.86,
+            "top": 274.31,
+            "x1": 502.88,
+            "bottom": 311.74,
+            "width_mm": 70.2,
+            "height_mm": 13.2
+          },
+          "text": "L | G | 170/80A\nmade in Bangladesh/fabriqué au Bangladesh/\nhecho en Bangladesh/fabbricato in Bangladesh/\n孟加拉制造",
+          "lines": [
+            "L | G | 170/80A",
+            "made in Bangladesh/fabriqué au Bangladesh/",
+            "hecho en Bangladesh/fabbricato in Bangladesh/",
+            "孟加拉制造"
+          ]
+        }
+      }
+    },
+    {
+      "page": 1,
+      "layout": 3,
+      "layout_on_page": 3,
+      "bbox": {
+        "x0": 61.92,
+        "top": 325.9,
+        "x1": 503.88,
+        "bottom": 365.33,
+        "width_mm": 155.9,
+        "height_mm": 13.9
+      },
+      "section_direction": "left_to_right",
+      "divider_positions": [
+        263.17,
+        283.01,
+        302.86
+      ],
+      "part_count": 4,
+      "parts": {
+        "part_1": {
+          "part": 1,
+          "bbox": {
+            "x0": 62.92,
+            "top": 326.9,
+            "x1": 262.17,
+            "bottom": 364.33,
+            "width_mm": 70.3,
+            "height_mm": 13.2
+          },
+          "text": "DEIJN decoration/sauf décoration/no incluye la decoración/\nesclusa la decorazione/装饰除外\nDEIJN RN54867 CA67359 ID# 36014990 416213-SPT 07 26\nDEIJN",
+          "lines": [
+            "DEIJN decoration/sauf décoration/no incluye la decoración/",
+            "esclusa la decorazione/装饰除外",
+            "DEIJN RN54867 CA67359 ID# 36014990 416213-SPT 07 26",
+            "DEIJN"
+          ]
+        },
+        "part_2": {
+          "part": 2,
+          "bbox": {
+            "x0": 264.17,
+            "top": 326.9,
+            "x1": 282.01,
+            "bottom": 364.33,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "583-1B\n4",
+          "lines": [
+            "583-1B",
+            "4"
+          ]
+        },
+        "part_3": {
+          "part": 3,
+          "bbox": {
+            "x0": 284.01,
+            "top": 326.9,
+            "x1": 301.86,
+            "bottom": 364.33,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "1",
+          "lines": [
+            "1"
+          ]
+        },
+        "part_4": {
+          "part": 4,
+          "bbox": {
+            "x0": 303.86,
+            "top": 326.9,
+            "x1": 502.88,
+            "bottom": 364.33,
+            "width_mm": 70.2,
+            "height_mm": 13.2
+          },
+          "text": "M | 170/72A\nmade in Bangladesh/fabriqué au Bangladesh/\nhecho en Bangladesh/fabbricato in Bangladesh/\n孟加拉制造",
+          "lines": [
+            "M | 170/72A",
+            "made in Bangladesh/fabriqué au Bangladesh/",
+            "hecho en Bangladesh/fabbricato in Bangladesh/",
+            "孟加拉制造"
+          ]
+        }
+      }
+    },
+    {
+      "page": 1,
+      "layout": 4,
+      "layout_on_page": 4,
+      "bbox": {
+        "x0": 61.92,
+        "top": 378.48,
+        "x1": 503.88,
+        "bottom": 417.92,
+        "width_mm": 155.9,
+        "height_mm": 13.9
+      },
+      "section_direction": "left_to_right",
+      "divider_positions": [
+        263.17,
+        283.01,
+        302.86
+      ],
+      "part_count": 4,
+      "parts": {
+        "part_1": {
+          "part": 1,
+          "bbox": {
+            "x0": 62.92,
+            "top": 379.48,
+            "x1": 262.17,
+            "bottom": 416.92,
+            "width_mm": 70.3,
+            "height_mm": 13.2
+          },
+          "text": "decoration/sauf décoration/no incluye la decoración/\nDEIJN\nesclusa la decorazione/装饰除外\nDEIJN\nRN54867 CA67359 ID# 36014990 416213-SPT 07 26\nDEIJN",
+          "lines": [
+            "decoration/sauf décoration/no incluye la decoración/",
+            "DEIJN",
+            "esclusa la decorazione/装饰除外",
+            "DEIJN",
+            "RN54867 CA67359 ID# 36014990 416213-SPT 07 26",
+            "DEIJN"
+          ]
+        },
+        "part_2": {
+          "part": 2,
+          "bbox": {
+            "x0": 264.17,
+            "top": 379.48,
+            "x1": 282.01,
+            "bottom": 416.92,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "583-1B\n4",
+          "lines": [
+            "583-1B",
+            "4"
+          ]
+        },
+        "part_3": {
+          "part": 3,
+          "bbox": {
+            "x0": 284.01,
+            "top": 379.48,
+            "x1": 301.86,
+            "bottom": 416.92,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "1",
+          "lines": [
+            "1"
+          ]
+        },
+        "part_4": {
+          "part": 4,
+          "bbox": {
+            "x0": 303.86,
+            "top": 379.48,
+            "x1": 502.88,
+            "bottom": 416.92,
+            "width_mm": 70.2,
+            "height_mm": 13.2
+          },
+          "text": "S | P | C H | 170/68A\nmade in Bangladesh/fabriqué au Bangladesh/\nhecho en Bangladesh/fabbricato in Bangladesh/\n孟加拉制造",
+          "lines": [
+            "S | P | C H | 170/68A",
+            "made in Bangladesh/fabriqué au Bangladesh/",
+            "hecho en Bangladesh/fabbricato in Bangladesh/",
+            "孟加拉制造"
+          ]
+        }
+      }
+    },
+    {
+      "page": 1,
+      "layout": 5,
+      "layout_on_page": 5,
+      "bbox": {
+        "x0": 61.92,
+        "top": 431.07,
+        "x1": 503.88,
+        "bottom": 470.51,
+        "width_mm": 155.9,
+        "height_mm": 13.9
+      },
+      "section_direction": "left_to_right",
+      "divider_positions": [
+        263.17,
+        283.01,
+        302.86
+      ],
+      "part_count": 4,
+      "parts": {
+        "part_1": {
+          "part": 1,
+          "bbox": {
+            "x0": 62.92,
+            "top": 432.07,
+            "x1": 262.17,
+            "bottom": 469.51,
+            "width_mm": 70.3,
+            "height_mm": 13.2
+          },
+          "text": "DEIJN decoration/sauf décoration/no incluye la decoración/\nesclusa la decorazione/装饰除外\nDEIJN RN54867 CA67359 ID# 36014990 416213-SPT 07 26\nDEIJN",
+          "lines": [
+            "DEIJN decoration/sauf décoration/no incluye la decoración/",
+            "esclusa la decorazione/装饰除外",
+            "DEIJN RN54867 CA67359 ID# 36014990 416213-SPT 07 26",
+            "DEIJN"
+          ]
+        },
+        "part_2": {
+          "part": 2,
+          "bbox": {
+            "x0": 264.17,
+            "top": 432.07,
+            "x1": 282.01,
+            "bottom": 469.51,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "583-1B\n4",
+          "lines": [
+            "583-1B",
+            "4"
+          ]
+        },
+        "part_3": {
+          "part": 3,
+          "bbox": {
+            "x0": 284.01,
+            "top": 432.07,
+            "x1": 301.86,
+            "bottom": 469.51,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "1",
+          "lines": [
+            "1"
+          ]
+        },
+        "part_4": {
+          "part": 4,
+          "bbox": {
+            "x0": 303.86,
+            "top": 432.07,
+            "x1": 502.88,
+            "bottom": 469.51,
+            "width_mm": 70.2,
+            "height_mm": 13.2
+          },
+          "text": "XL | XG | E G | 170/90A\nmade in Bangladesh/fabriqué au Bangladesh/\nhecho en Bangladesh/fabbricato in Bangladesh/\n孟加拉制造",
+          "lines": [
+            "XL | XG | E G | 170/90A",
+            "made in Bangladesh/fabriqué au Bangladesh/",
+            "hecho en Bangladesh/fabbricato in Bangladesh/",
+            "孟加拉制造"
+          ]
+        }
+      }
+    },
+    {
+      "page": 1,
+      "layout": 6,
+      "layout_on_page": 6,
+      "bbox": {
+        "x0": 61.92,
+        "top": 483.66,
+        "x1": 503.88,
+        "bottom": 523.1,
+        "width_mm": 155.9,
+        "height_mm": 13.9
+      },
+      "section_direction": "left_to_right",
+      "divider_positions": [
+        263.17,
+        283.01,
+        302.86
+      ],
+      "part_count": 4,
+      "parts": {
+        "part_1": {
+          "part": 1,
+          "bbox": {
+            "x0": 62.92,
+            "top": 484.66,
+            "x1": 262.17,
+            "bottom": 522.1,
+            "width_mm": 70.3,
+            "height_mm": 13.2
+          },
+          "text": "decoration/sauf décoration/no incluye la decoración/\nDEIJN\nesclusa la decorazione/装饰除外\nDEIJN\nRN54867 CA67359 ID# 36014990 416213-SPT 07 26\nDEIJN",
+          "lines": [
+            "decoration/sauf décoration/no incluye la decoración/",
+            "DEIJN",
+            "esclusa la decorazione/装饰除外",
+            "DEIJN",
+            "RN54867 CA67359 ID# 36014990 416213-SPT 07 26",
+            "DEIJN"
+          ]
+        },
+        "part_2": {
+          "part": 2,
+          "bbox": {
+            "x0": 264.17,
+            "top": 484.66,
+            "x1": 282.01,
+            "bottom": 522.1,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "583-1B\n4",
+          "lines": [
+            "583-1B",
+            "4"
+          ]
+        },
+        "part_3": {
+          "part": 3,
+          "bbox": {
+            "x0": 284.01,
+            "top": 484.66,
+            "x1": 301.86,
+            "bottom": 522.1,
+            "width_mm": 6.3,
+            "height_mm": 13.2
+          },
+          "text": "1",
+          "lines": [
+            "1"
+          ]
+        },
+        "part_4": {
+          "part": 4,
+          "bbox": {
+            "x0": 303.86,
+            "top": 484.66,
+            "x1": 502.88,
+            "bottom": 522.1,
+            "width_mm": 70.2,
+            "height_mm": 13.2
+          },
+          "text": "XS | XP | E CH | 165/64A\nmade in Bangladesh/fabriqué au Bangladesh/\nhecho en Bangladesh/fabbricato in Bangladesh/\n孟加拉制造",
+          "lines": [
+            "XS | XP | E CH | 165/64A",
+            "made in Bangladesh/fabriqué au Bangladesh/",
+            "hecho en Bangladesh/fabbricato in Bangladesh/",
+            "孟加拉制造"
+          ]
+        }
+      }
+    }
+  ]
+}
