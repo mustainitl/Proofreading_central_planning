@@ -1,0 +1,1458 @@
+{
+  "source_file": "C:\\Users\\N_R_KHAN\\Documents\\ITL_PROJECTS\\Proofreading_central_planning\\VS\\input_files\\4502859819.pdf",
+  "document_type": "Purchase Order",
+  "extraction_method": "embedded text + deterministic state-machine parser",
+  "page_count": 6,
+  "header": {
+    "po_number": "4502859819",
+    "total_value": "1,671.25",
+    "currency": "USD",
+    "po_date": "14.05.2026",
+    "last_revised": "14.05.2026",
+    "version": "1",
+    "payment_term": "Within 90 days Due net",
+    "inco_term": "Ex Works/Ex Works",
+    "end_buyer": "Pink",
+    "contact": "MALIKASI",
+    "email": "malikasi@masholdings.com",
+    "supplier_name": "INTERNATIONAL TRIMMINGS & LABELS BANGLADESH",
+    "notify_party": "MAS Intimates Bangladesh (Pvt) Ltd."
+  },
+  "items": [
+    {
+      "item_code": "2001431649",
+      "item_description": "LBL LB07655 PPK1023 C1 MWW001",
+      "description_lines": [
+        "LB 07655 PPK-1023 C1"
+      ],
+      "supplier_reference": "416213/SPT",
+      "item_quantity": "10,743.000",
+      "uom": "PC",
+      "item_value": "334.25",
+      "tolerance": {
+        "plus_percent": "2.0",
+        "minus_percent": "2.0"
+      },
+      "sales_orders": {
+        "1001667108/10": {
+          "sales_order": "1001667108",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 190,
+              "size": "L",
+              "quantity": "126.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 190,
+              "size": "M",
+              "quantity": "312.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 190,
+              "size": "S",
+              "quantity": "235.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 190,
+              "size": "XL",
+              "quantity": "57.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 190,
+              "size": "XS",
+              "quantity": "89.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            }
+          ]
+        },
+        "1001667234/10": {
+          "sales_order": "1001667234",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 180,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 180,
+              "size": "M",
+              "quantity": "988.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 180,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 180,
+              "size": "XL",
+              "quantity": "467.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 180,
+              "size": "XS",
+              "quantity": "261.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 180,
+              "size": "XXL",
+              "quantity": "252.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            }
+          ]
+        },
+        "1001667260/10": {
+          "sales_order": "1001667260",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 170,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 170,
+              "size": "M",
+              "quantity": "987.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 170,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 170,
+              "size": "XL",
+              "quantity": "466.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 1
+            },
+            {
+              "po_line": 170,
+              "size": "XS",
+              "quantity": "260.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 170,
+              "size": "XXL",
+              "quantity": "251.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            }
+          ]
+        },
+        "1001667399/10": {
+          "sales_order": "1001667399",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 200,
+              "size": "L",
+              "quantity": "404.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 200,
+              "size": "M",
+              "quantity": "1,287.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 200,
+              "size": "S",
+              "quantity": "718.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 200,
+              "size": "XL",
+              "quantity": "428.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 200,
+              "size": "XS",
+              "quantity": "229.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "item_code": "2001431709",
+      "item_description": "LBL LB07655 PPK1023 C1 MWW001",
+      "description_lines": [
+        "LB 07655 PPK-1023 C1"
+      ],
+      "supplier_reference": "416213/SEQ",
+      "item_quantity": "10,743.000",
+      "uom": "PC",
+      "item_value": "334.25",
+      "tolerance": {
+        "plus_percent": "2.0",
+        "minus_percent": "2.0"
+      },
+      "sales_orders": {
+        "1001667108/10": {
+          "sales_order": "1001667108",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 150,
+              "size": "L",
+              "quantity": "126.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 150,
+              "size": "M",
+              "quantity": "312.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 150,
+              "size": "S",
+              "quantity": "235.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 150,
+              "size": "XL",
+              "quantity": "57.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 150,
+              "size": "XS",
+              "quantity": "89.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            }
+          ]
+        },
+        "1001667234/10": {
+          "sales_order": "1001667234",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 140,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 140,
+              "size": "M",
+              "quantity": "988.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 140,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 140,
+              "size": "XL",
+              "quantity": "467.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 140,
+              "size": "XS",
+              "quantity": "261.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 140,
+              "size": "XXL",
+              "quantity": "252.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            }
+          ]
+        },
+        "1001667260/10": {
+          "sales_order": "1001667260",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 130,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 130,
+              "size": "M",
+              "quantity": "987.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 130,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 130,
+              "size": "XL",
+              "quantity": "466.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 130,
+              "size": "XS",
+              "quantity": "260.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            },
+            {
+              "po_line": 130,
+              "size": "XXL",
+              "quantity": "251.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 2
+            }
+          ]
+        },
+        "1001667399/10": {
+          "sales_order": "1001667399",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 160,
+              "size": "L",
+              "quantity": "404.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 160,
+              "size": "M",
+              "quantity": "1,287.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 160,
+              "size": "S",
+              "quantity": "718.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 160,
+              "size": "XL",
+              "quantity": "428.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 160,
+              "size": "XS",
+              "quantity": "229.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "item_code": "2001437812",
+      "item_description": "LBL LB07655 PPK1023 C1 MWW001",
+      "description_lines": [
+        "LB 07655 PPK-1023 C1"
+      ],
+      "supplier_reference": "416219/QEB",
+      "item_quantity": "10,743.000",
+      "uom": "PC",
+      "item_value": "334.25",
+      "tolerance": {
+        "plus_percent": "2.0",
+        "minus_percent": "2.0"
+      },
+      "sales_orders": {
+        "1001667108/10": {
+          "sales_order": "1001667108",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 110,
+              "size": "L",
+              "quantity": "126.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 110,
+              "size": "M",
+              "quantity": "312.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 110,
+              "size": "S",
+              "quantity": "235.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 110,
+              "size": "XL",
+              "quantity": "57.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 110,
+              "size": "XS",
+              "quantity": "89.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            }
+          ]
+        },
+        "1001667234/10": {
+          "sales_order": "1001667234",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 100,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 100,
+              "size": "M",
+              "quantity": "988.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 100,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 100,
+              "size": "XL",
+              "quantity": "467.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 100,
+              "size": "XS",
+              "quantity": "261.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 100,
+              "size": "XXL",
+              "quantity": "252.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            }
+          ]
+        },
+        "1001667260/10": {
+          "sales_order": "1001667260",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 90,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 90,
+              "size": "M",
+              "quantity": "987.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 90,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 90,
+              "size": "XL",
+              "quantity": "466.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 90,
+              "size": "XS",
+              "quantity": "260.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 90,
+              "size": "XXL",
+              "quantity": "251.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            }
+          ]
+        },
+        "1001667399/10": {
+          "sales_order": "1001667399",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 120,
+              "size": "L",
+              "quantity": "404.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 120,
+              "size": "M",
+              "quantity": "1,287.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 120,
+              "size": "S",
+              "quantity": "718.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 120,
+              "size": "XL",
+              "quantity": "428.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 3
+            },
+            {
+              "po_line": 120,
+              "size": "XS",
+              "quantity": "229.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "item_code": "2001437813",
+      "item_description": "LBL LB07655 PPK1023 C1 MWW001",
+      "description_lines": [
+        "LB 07655 PPK-1023 C1"
+      ],
+      "supplier_reference": "416219/QE7",
+      "item_quantity": "10,743.000",
+      "uom": "PC",
+      "item_value": "334.25",
+      "tolerance": {
+        "plus_percent": "2.0",
+        "minus_percent": "2.0"
+      },
+      "sales_orders": {
+        "1001667108/10": {
+          "sales_order": "1001667108",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 70,
+              "size": "L",
+              "quantity": "126.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 70,
+              "size": "M",
+              "quantity": "312.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 70,
+              "size": "S",
+              "quantity": "235.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 70,
+              "size": "XL",
+              "quantity": "57.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 70,
+              "size": "XS",
+              "quantity": "89.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            }
+          ]
+        },
+        "1001667234/10": {
+          "sales_order": "1001667234",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 60,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 60,
+              "size": "M",
+              "quantity": "988.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 60,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 60,
+              "size": "XL",
+              "quantity": "467.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 60,
+              "size": "XS",
+              "quantity": "261.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 60,
+              "size": "XXL",
+              "quantity": "252.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            }
+          ]
+        },
+        "1001667260/10": {
+          "sales_order": "1001667260",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 50,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 50,
+              "size": "M",
+              "quantity": "987.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 50,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 50,
+              "size": "XL",
+              "quantity": "466.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 50,
+              "size": "XS",
+              "quantity": "260.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 50,
+              "size": "XXL",
+              "quantity": "251.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            }
+          ]
+        },
+        "1001667399/10": {
+          "sales_order": "1001667399",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 80,
+              "size": "L",
+              "quantity": "404.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 80,
+              "size": "M",
+              "quantity": "1,287.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 80,
+              "size": "S",
+              "quantity": "718.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 80,
+              "size": "XL",
+              "quantity": "428.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            },
+            {
+              "po_line": 80,
+              "size": "XS",
+              "quantity": "229.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "item_code": "2001437817",
+      "item_description": "LBL LB07655 PPK1023 C1 MWW001",
+      "description_lines": [
+        "LB 07655 PPK-1023 C1"
+      ],
+      "supplier_reference": "416219/QEK",
+      "item_quantity": "10,743.000",
+      "uom": "PC",
+      "item_value": "334.25",
+      "tolerance": {
+        "plus_percent": "2.0",
+        "minus_percent": "2.0"
+      },
+      "sales_orders": {
+        "1001667108/10": {
+          "sales_order": "1001667108",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 30,
+              "size": "L",
+              "quantity": "126.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 30,
+              "size": "M",
+              "quantity": "312.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 30,
+              "size": "S",
+              "quantity": "235.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 30,
+              "size": "XL",
+              "quantity": "57.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 30,
+              "size": "XS",
+              "quantity": "89.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            }
+          ]
+        },
+        "1001667234/10": {
+          "sales_order": "1001667234",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 20,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 20,
+              "size": "M",
+              "quantity": "988.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 20,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 20,
+              "size": "XL",
+              "quantity": "467.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 20,
+              "size": "XS",
+              "quantity": "261.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 20,
+              "size": "XXL",
+              "quantity": "252.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            }
+          ]
+        },
+        "1001667260/10": {
+          "sales_order": "1001667260",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 10,
+              "size": "L",
+              "quantity": "800.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 10,
+              "size": "M",
+              "quantity": "987.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 10,
+              "size": "S",
+              "quantity": "663.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 10,
+              "size": "XL",
+              "quantity": "466.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 10,
+              "size": "XS",
+              "quantity": "260.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 10,
+              "size": "XXL",
+              "quantity": "251.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            }
+          ]
+        },
+        "1001667399/10": {
+          "sales_order": "1001667399",
+          "sales_order_line": "10",
+          "size_rows": [
+            {
+              "po_line": 40,
+              "size": "L",
+              "quantity": "404.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 40,
+              "size": "M",
+              "quantity": "1,287.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 40,
+              "size": "S",
+              "quantity": "718.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 40,
+              "size": "XL",
+              "quantity": "428.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            },
+            {
+              "po_line": 40,
+              "size": "XS",
+              "quantity": "229.000",
+              "uom": "PC",
+              "price": "31.11",
+              "price_per": "1000",
+              "ship_mode": "Truck",
+              "source_page": 5
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "remarks_and_terms": {
+    "remarks_raw": "36014990\n2026/7\nNote: Accepting this contract supplier agree to strictly adhere to the restrictions imposed by The U.S Department of Treasury#s Office of Foreign Assets Control (#OFAC#) of terminating all such transactions, dealings\nand/or engagements of any form or nature with XPCC (Xinjiang Production and Construction Corps ) or any of its Affiliates or any other entity in the Xingjian Province, China.",
+    "terms_raw": "1. The description, quantity and any technical specification for the goods shall be those set out in the above order, and shall not be deviated and/or 10. The Seller shall not use any metal nails, pins, clips, staples or like material for the purpose of packing. The Supplier hereby ensures and\namended in any manner what-so ever, without the prior written approval of the Purchaser. guarantees to the Purchaser that all cartons and packing materials shall be anti-metal.\n2. Unless otherwise agreed , if the Seller is unable to deliver goods on the date specified on the Purchaser's Purchase order , the Seller will be liable for any 11. This document forms part and parcel of the agreement between the Purchaser and the Seller and the Parties shall be bound by the terms\ncosts including the cost of airfreight, if any, that arise as a result of late delivery. The Seller shall indemnify and hold harmless the Purchaser against any hereof.\nlosses or claims arising as a result of such a delay. 12. Upon Delivery of the order, the Purchaser shall have the right to reject the Order in relation to the quantity and quality of the goods\n3. The Seller must forward a proforma invoice accepting the order submitted by the Purchaser, within the time periods stipulated below: delivered at any time. The Purchaser shall neither be liable to return any rejected quantities to the Seller nor required to pay for same. The\nPO Type Time period to submit Proforma Invoice Seller may be required to replenish quantities rejected and the Seller shall do so within the timelines given by the Purchaser.\nRegular 48 hrs 13. The Supplier shall adhere strictly to the terms and conditions relating to price, delivery and packaging stipulated in the Purchase Order.\nPriority 24 hrs 14. Payment will be made on the agreed payment terms and in the currency stipulated in the Purchase Order.\nHigh Priority 24 hrs 15. For Air Freight, we require only scanned copies of the Invoice/Packing List/Air Way Bill (MAWB & HAWB) - But original documents\n4. The Purchase Order number and material number (or its equivalent) must be mentioned on all documents sent by the Seller. should be handed over to the forwarding agent at the time of handing over the cargo.\n5. The Seller shall ship the exact quantity ordered, as per the Purchase Order, subject to a maximum acceptable tolerance limit (+/- %) as stated in the 16. Signed copies of the above documents should reach us via e-mail to airimports@masholdings.com within 12 hrs from the ETD. If the Air\nPurchase Order. The Purchaser shall not be liable for any products shipped in excess of this limit. The Purchaser shall not be liable to return to the transit is less than 12 hrs, please e-mail the Commercial Invoice/Packing list along with the flight details 6 hrs prior to ETA. Subject line of the\nSuppliers the excess products supplied by the Supplier over the agreed limit and will not be liable to pay for such quantities above the agreed excess limit. e-mail would be \"Name of the supplier/Invoice No/PO no\".\n6. The Seller may, with the prior consent of the Purchaser, split the deliveries of Products of a PO provided that all deliveries pertaining to a PO are made 17. Shipping Marks :\nupto the required quantities (inclusive of tolerances) within the agreed time duration with the purchaser. Company Name\n7. Any shipments that are below the lower limit of the ordered quantity shall not be acceptable and shall be replenished by the Seller within the time District\nperiod specified by the Purchaser. Any resultant additional costs, damages or losses shall be borne by the Seller. Plant Code\n8. All material must conform to the testing requirements set out by the end customer, which is specified in the end customer manual. Sellers must test all Country\nthe materials in an accredited laboratory at their cost and submit the approved test report to the buyer prior to shipment as required. The Seller shall also CT. NO :...... of ...\nsubmit originals of all mandatory laboratory test reports and shipping samples as required by the Purchaser, before any bulk shipment is affected. 18. Actual carton dimensions/Gross weight/ Net weight/ Volume weight should be clearly marked on the Invoice & P/L. Shipping documents\nNotwithstanding the above, if any goods delivered by the Seller, are not fit for the purposes of the customer of the Purchaser, the Purchaser may return should be as per the correct INCO terms & Payment terms.\nsaid goods to the Seller at the Seller's cost and the Purchaser shall not be liable to make payment for the same. 19. Relevant HS Code per item should be marked in the Description column on the Commercial Invoice. Item Description should be clearly\n9. If any customer rejects or returns a product on or after the sale of the product to the end user or there are any claims by third parties, solely due to indicated (E.g. Knit Fabric, Elastics, Lace, etc) on the Invoice. Shipping Mode should be indicated on the Invoice.\nquality issues with the material/s supplied, by the Seller, the Seller shall bear the all liability of such claim or value. 20. If the above Items 11 to 17 are not fulfilled there will be a charge back of US$ 50 per shipment & demurrages, if any.\nTOTAL NET VALUE EXCLUDING TAX : USD 1,671.25\nPREPARED BY DATE AUTHORIZED BY AUTHORIZED BY\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6",
+    "numbered_terms": [
+      {
+        "number": 1,
+        "text": "The description, quantity and any technical specification for the goods shall be those set out in the above order, and shall not be deviated and/or 10. The Seller shall not use any metal nails, pins, clips, staples or like material for the purpose of packing. The Supplier hereby ensures and amended in any manner what-so ever, without the prior written approval of the Purchaser. guarantees to the Purchaser that all cartons and packing materials shall be anti-metal."
+      },
+      {
+        "number": 2,
+        "text": "Unless otherwise agreed , if the Seller is unable to deliver goods on the date specified on the Purchaser's Purchase order , the Seller will be liable for any 11. This document forms part and parcel of the agreement between the Purchaser and the Seller and the Parties shall be bound by the terms costs including the cost of airfreight, if any, that arise as a result of late delivery. The Seller shall indemnify and hold harmless the Purchaser against any hereof. losses or claims arising as a result of such a delay. 12. Upon Delivery of the order, the Purchaser shall have the right to reject the Order in relation to the quantity and quality of the goods"
+      },
+      {
+        "number": 3,
+        "text": "The Seller must forward a proforma invoice accepting the order submitted by the Purchaser, within the time periods stipulated below: delivered at any time. The Purchaser shall neither be liable to return any rejected quantities to the Seller nor required to pay for same. The PO Type Time period to submit Proforma Invoice Seller may be required to replenish quantities rejected and the Seller shall do so within the timelines given by the Purchaser. Regular 48 hrs 13. The Supplier shall adhere strictly to the terms and conditions relating to price, delivery and packaging stipulated in the Purchase Order. Priority 24 hrs 14. Payment will be made on the agreed payment terms and in the currency stipulated in the Purchase Order. High Priority 24 hrs 15. For Air Freight, we require only scanned copies of the Invoice/Packing List/Air Way Bill (MAWB & HAWB) - But original documents"
+      },
+      {
+        "number": 4,
+        "text": "The Purchase Order number and material number (or its equivalent) must be mentioned on all documents sent by the Seller. should be handed over to the forwarding agent at the time of handing over the cargo."
+      },
+      {
+        "number": 5,
+        "text": "The Seller shall ship the exact quantity ordered, as per the Purchase Order, subject to a maximum acceptable tolerance limit (+/- %) as stated in the 16. Signed copies of the above documents should reach us via e-mail to airimports@masholdings.com within 12 hrs from the ETD. If the Air Purchase Order. The Purchaser shall not be liable for any products shipped in excess of this limit. The Purchaser shall not be liable to return to the transit is less than 12 hrs, please e-mail the Commercial Invoice/Packing list along with the flight details 6 hrs prior to ETA. Subject line of the Suppliers the excess products supplied by the Supplier over the agreed limit and will not be liable to pay for such quantities above the agreed excess limit. e-mail would be \"Name of the supplier/Invoice No/PO no\"."
+      },
+      {
+        "number": 6,
+        "text": "The Seller may, with the prior consent of the Purchaser, split the deliveries of Products of a PO provided that all deliveries pertaining to a PO are made 17. Shipping Marks : upto the required quantities (inclusive of tolerances) within the agreed time duration with the purchaser. Company Name"
+      },
+      {
+        "number": 7,
+        "text": "Any shipments that are below the lower limit of the ordered quantity shall not be acceptable and shall be replenished by the Seller within the time District period specified by the Purchaser. Any resultant additional costs, damages or losses shall be borne by the Seller. Plant Code"
+      },
+      {
+        "number": 8,
+        "text": "All material must conform to the testing requirements set out by the end customer, which is specified in the end customer manual. Sellers must test all Country the materials in an accredited laboratory at their cost and submit the approved test report to the buyer prior to shipment as required. The Seller shall also CT. NO :...... of ... submit originals of all mandatory laboratory test reports and shipping samples as required by the Purchaser, before any bulk shipment is affected. 18. Actual carton dimensions/Gross weight/ Net weight/ Volume weight should be clearly marked on the Invoice & P/L. Shipping documents Notwithstanding the above, if any goods delivered by the Seller, are not fit for the purposes of the customer of the Purchaser, the Purchaser may return should be as per the correct INCO terms & Payment terms. said goods to the Seller at the Seller's cost and the Purchaser shall not be liable to make payment for the same. 19. Relevant HS Code per item should be marked in the Description column on the Commercial Invoice. Item Description should be clearly"
+      },
+      {
+        "number": 9,
+        "text": "If any customer rejects or returns a product on or after the sale of the product to the end user or there are any claims by third parties, solely due to indicated (E.g. Knit Fabric, Elastics, Lace, etc) on the Invoice. Shipping Mode should be indicated on the Invoice. quality issues with the material/s supplied, by the Seller, the Seller shall bear the all liability of such claim or value. 20. If the above Items 11 to 17 are not fulfilled there will be a charge back of US$ 50 per shipment & demurrages, if any. TOTAL NET VALUE EXCLUDING TAX : USD 1,671.25 PREPARED BY DATE AUTHORIZED BY AUTHORIZED BY Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6 Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6"
+      }
+    ]
+  },
+  "validation": {
+    "items": [
+      {
+        "item_code": "2001431649",
+        "number_of_size_rows": 22,
+        "stated_quantity": "10743.000",
+        "calculated_quantity": "10743.000",
+        "quantity_matches": true
+      },
+      {
+        "item_code": "2001431709",
+        "number_of_size_rows": 22,
+        "stated_quantity": "10743.000",
+        "calculated_quantity": "10743.000",
+        "quantity_matches": true
+      },
+      {
+        "item_code": "2001437812",
+        "number_of_size_rows": 22,
+        "stated_quantity": "10743.000",
+        "calculated_quantity": "10743.000",
+        "quantity_matches": true
+      },
+      {
+        "item_code": "2001437813",
+        "number_of_size_rows": 22,
+        "stated_quantity": "10743.000",
+        "calculated_quantity": "10743.000",
+        "quantity_matches": true
+      },
+      {
+        "item_code": "2001437817",
+        "number_of_size_rows": 22,
+        "stated_quantity": "10743.000",
+        "calculated_quantity": "10743.000",
+        "quantity_matches": true
+      }
+    ],
+    "all_item_quantities_match": true,
+    "stated_po_value": "1671.25",
+    "calculated_po_value": "1671.25",
+    "po_value_matches": true,
+    "unparsed_table_lines": []
+  },
+  "raw_pages": [
+    {
+      "page_number": 1,
+      "text": "Attn : Notify Party/Deliver To :\nPurchase Order\nINTERNATIONAL TRIMMINGS & MAS Intimates Bangladesh (Pvt) Ltd.\nLABELSBAN Karnaphuli epz\nNorth-Patenga\n9th Floor. Prominent Tower, Plot # 01, Road - 02, PO Number 4502859819\nSector-03, Total Value 1,671.25 Chittagong 4204\n1230Dhaka\nCurrency USD\nBangladesh Bangladesh\nDate 14.05.2026 Chittagong - A100\nTel : 880258956329 Last Revised 14.05.2026\nVersion 1 Bill To: Consignee :\nMAS Intimates Bangladesh (Pvt) Ltd.\nPayment Term : Within 90 days Due net\nFSFB 1\nInco Term : Ex Works/Ex Works\nKarnaphuli epz\nEnd Buyer : Pink Contact MALIKASI North-Patenga\nEmail malikasi@masholdings.com Chittagong\n36014990 Tel Bangladesh\nTax Code-\n2026/7 Fax\nPO SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PER DISCOUNT/ EX-FACT TOLERANCE\nLINE# UNIT SURCHARGE DATE SHIP MODE\n2001431649 LBL LB07655 PPK1023 C1 MWW001 416213/SPT / 10,743.000 PC 334.25 + 2.0 /- 2.0\nLB 07655 PPK-1023 C1\n1001667108 / 10\n190 L 126.000 PC 31.11 / 1,000 Truck\n190 M 312.000 PC 31.11 / 1,000 Truck\n190 S 235.000 PC 31.11 / 1,000 Truck\n190 XL 57.000 PC 31.11 / 1,000 Truck\n190 XS 89.000 PC 31.11 / 1,000 Truck\n1001667234 / 10\n180 L 800.000 PC 31.11 / 1,000 Truck\n180 M 988.000 PC 31.11 / 1,000 Truck\n180 S 663.000 PC 31.11 / 1,000 Truck\n180 XL 467.000 PC 31.11 / 1,000 Truck\n180 XS 261.000 PC 31.11 / 1,000 Truck\n180 XXL 252.000 PC 31.11 / 1,000 Truck\n1001667260 / 10\n170 L 800.000 PC 31.11 / 1,000 Truck\n170 M 987.000 PC 31.11 / 1,000 Truck\n170 S 663.000 PC 31.11 / 1,000 Truck\n170 XL 466.000 PC 31.11 / 1,000 Truck\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 1 of 6",
+      "layout_text": "                                                                                                                    \n                                                                                                                    \n    Attn :                                                  Notify Party/Deliver To :                               \n                                  Purchase     Order                                                                \n    INTERNATIONAL TRIMMINGS &                               MAS Intimates Bangladesh (Pvt) Ltd.                     \n   LABELSBAN                                                Karnaphuli epz                                          \n                                                            North-Patenga                                           \n    9th Floor. Prominent Tower, Plot # 01, Road - 02, PO Number 4502859819                                          \n   Sector-03,                  Total Value 1,671.25         Chittagong 4204                                         \n    1230Dhaka                                                                                                       \n                               Currency   USD                                                                       \n    Bangladesh                                              Bangladesh                                              \n                               Date       14.05.2026        Chittagong - A100                                       \n    Tel : 880258956329         Last Revised 14.05.2026                                                              \n                               Version    1                 Bill To:                   Consignee :                  \n                                                            MAS Intimates Bangladesh (Pvt) Ltd.                     \n   Payment Term : Within 90 days Due net                                                                            \n                                                            FSFB 1                                                  \n   Inco Term : Ex Works/Ex Works                                                                                    \n                                                            Karnaphuli epz                                          \n   End Buyer : Pink            Contact    MALIKASI          North-Patenga                                           \n                               Email      malikasi@masholdings.com Chittagong                                       \n   36014990                    Tel                          Bangladesh                                              \n                                                            Tax Code-                                               \n   2026/7                      Fax                                                                                  \n     PO   SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PERDISCOUNT/ EX-FACT TOLERANCE\n     LINE#                                                                            UNIT SURCHARGE DATE SHIP MODE \n                       2001431649 LBL LB07655 PPK1023 C1 MWW001 416213/SPT / 10,743.000 PC 334.25          + 2.0 /- 2.0\n                                LB 07655 PPK-1023 C1                                                                \n          1001667108 / 10                                                                                           \n     190                                                       L        126.000 PC 31.11 / 1,000          Truck     \n     190                                                       M        312.000 PC 31.11 / 1,000          Truck     \n     190                                                       S        235.000 PC 31.11 / 1,000          Truck     \n     190                                                       XL       57.000 PC 31.11 / 1,000           Truck     \n     190                                                       XS       89.000 PC 31.11 / 1,000           Truck     \n          1001667234 / 10                                                                                           \n     180                                                       L        800.000 PC 31.11 / 1,000          Truck     \n     180                                                       M        988.000 PC 31.11 / 1,000          Truck     \n     180                                                       S        663.000 PC 31.11 / 1,000          Truck     \n     180                                                       XL       467.000 PC 31.11 / 1,000          Truck     \n     180                                                       XS       261.000 PC 31.11 / 1,000          Truck     \n     180                                                       XXL      252.000 PC 31.11 / 1,000          Truck     \n          1001667260 / 10                                                                                           \n     170                                                       L        800.000 PC 31.11 / 1,000          Truck     \n     170                                                       M        987.000 PC 31.11 / 1,000          Truck     \n     170                                                       S        663.000 PC 31.11 / 1,000          Truck     \n     170                                                       XL       466.000 PC 31.11 / 1,000          Truck     \n                        Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 1 of 6",
+      "word_count": 303,
+      "image_count": 2
+    },
+    {
+      "page_number": 2,
+      "text": "PO Number - 4502859819\nPO SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PER DISCOUNT/ EX-FACT TOLERANCE\nLINE# UNIT SURCHARGE DATE SHIP MODE\n170 XS 260.000 PC 31.11 / 1,000 Truck\n170 XXL 251.000 PC 31.11 / 1,000 Truck\n1001667399 / 10\n200 L 404.000 PC 31.11 / 1,000 Truck\n200 M 1,287.000 PC 31.11 / 1,000 Truck\n200 S 718.000 PC 31.11 / 1,000 Truck\n200 XL 428.000 PC 31.11 / 1,000 Truck\n200 XS 229.000 PC 31.11 / 1,000 Truck\n2001431709 LBL LB07655 PPK1023 C1 MWW001 416213/SEQ / 10,743.000 PC 334.25 + 2.0 /- 2.0\nLB 07655 PPK-1023 C1\n1001667108 / 10\n150 L 126.000 PC 31.11 / 1,000 Truck\n150 M 312.000 PC 31.11 / 1,000 Truck\n150 S 235.000 PC 31.11 / 1,000 Truck\n150 XL 57.000 PC 31.11 / 1,000 Truck\n150 XS 89.000 PC 31.11 / 1,000 Truck\n1001667234 / 10\n140 L 800.000 PC 31.11 / 1,000 Truck\n140 M 988.000 PC 31.11 / 1,000 Truck\n140 S 663.000 PC 31.11 / 1,000 Truck\n140 XL 467.000 PC 31.11 / 1,000 Truck\n140 XS 261.000 PC 31.11 / 1,000 Truck\n140 XXL 252.000 PC 31.11 / 1,000 Truck\n1001667260 / 10\n130 L 800.000 PC 31.11 / 1,000 Truck\n130 M 987.000 PC 31.11 / 1,000 Truck\n130 S 663.000 PC 31.11 / 1,000 Truck\n130 XL 466.000 PC 31.11 / 1,000 Truck\n130 XS 260.000 PC 31.11 / 1,000 Truck\n130 XXL 251.000 PC 31.11 / 1,000 Truck\n1001667399 / 10\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 2 of 6",
+      "layout_text": "                                                                                                                    \n   PO Number - 4502859819                                                                                           \n   PO   SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PERDISCOUNT/ EX-FACT TOLERANCE\n   LINE#                                                                             UNIT SURCHARGE DATE SHIP MODE  \n    170                                                      XS       260.000 PC 31.11 / 1,000           Truck      \n    170                                                      XXL      251.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667399 / 10                                                                                             \n                                                                                                                    \n    200                                                      L        404.000 PC 31.11 / 1,000           Truck      \n    200                                                      M       1,287.000 PC 31.11 / 1,000          Truck      \n    200                                                      S        718.000 PC 31.11 / 1,000           Truck      \n    200                                                      XL       428.000 PC 31.11 / 1,000           Truck      \n    200                                                      XS       229.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n                     2001431709 LBL LB07655 PPK1023 C1 MWW001 416213/SEQ / 10,743.000 PC 334.25          + 2.0 /- 2.0\n                              LB 07655 PPK-1023 C1                                                                  \n        1001667108 / 10                                                                                             \n    150                                                      L        126.000 PC 31.11 / 1,000           Truck      \n    150                                                      M        312.000 PC 31.11 / 1,000           Truck      \n    150                                                      S        235.000 PC 31.11 / 1,000           Truck      \n    150                                                      XL        57.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    150                                                      XS        89.000 PC 31.11 / 1,000           Truck      \n        1001667234 / 10                                                                                             \n                                                                                                                    \n    140                                                      L        800.000 PC 31.11 / 1,000           Truck      \n    140                                                      M        988.000 PC 31.11 / 1,000           Truck      \n    140                                                      S        663.000 PC 31.11 / 1,000           Truck      \n    140                                                      XL       467.000 PC 31.11 / 1,000           Truck      \n    140                                                      XS       261.000 PC 31.11 / 1,000           Truck      \n    140                                                      XXL      252.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667260 / 10                                                                                             \n    130                                                      L        800.000 PC 31.11 / 1,000           Truck      \n    130                                                      M        987.000 PC 31.11 / 1,000           Truck      \n    130                                                      S        663.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    130                                                      XL       466.000 PC 31.11 / 1,000           Truck      \n    130                                                      XS       260.000 PC 31.11 / 1,000           Truck      \n    130                                                      XXL      251.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667399 / 10                                                                                             \n                                                                                                                    \n                        Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 2 of 6",
+      "word_count": 284,
+      "image_count": 1
+    },
+    {
+      "page_number": 3,
+      "text": "PO Number - 4502859819\nPO SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PER DISCOUNT/ EX-FACT TOLERANCE\nLINE# UNIT SURCHARGE DATE SHIP MODE\n160 L 404.000 PC 31.11 / 1,000 Truck\n160 M 1,287.000 PC 31.11 / 1,000 Truck\n160 S 718.000 PC 31.11 / 1,000 Truck\n160 XL 428.000 PC 31.11 / 1,000 Truck\n160 XS 229.000 PC 31.11 / 1,000 Truck\n2001437812 LBL LB07655 PPK1023 C1 MWW001 416219/QEB / 10,743.000 PC 334.25 + 2.0 /- 2.0\nLB 07655 PPK-1023 C1\n1001667108 / 10\n110 L 126.000 PC 31.11 / 1,000 Truck\n110 M 312.000 PC 31.11 / 1,000 Truck\n110 S 235.000 PC 31.11 / 1,000 Truck\n110 XL 57.000 PC 31.11 / 1,000 Truck\n110 XS 89.000 PC 31.11 / 1,000 Truck\n1001667234 / 10\n100 L 800.000 PC 31.11 / 1,000 Truck\n100 M 988.000 PC 31.11 / 1,000 Truck\n100 S 663.000 PC 31.11 / 1,000 Truck\n100 XL 467.000 PC 31.11 / 1,000 Truck\n100 XS 261.000 PC 31.11 / 1,000 Truck\n100 XXL 252.000 PC 31.11 / 1,000 Truck\n1001667260 / 10\n90 L 800.000 PC 31.11 / 1,000 Truck\n90 M 987.000 PC 31.11 / 1,000 Truck\n90 S 663.000 PC 31.11 / 1,000 Truck\n90 XL 466.000 PC 31.11 / 1,000 Truck\n90 XS 260.000 PC 31.11 / 1,000 Truck\n90 XXL 251.000 PC 31.11 / 1,000 Truck\n1001667399 / 10\n120 L 404.000 PC 31.11 / 1,000 Truck\n120 M 1,287.000 PC 31.11 / 1,000 Truck\n120 S 718.000 PC 31.11 / 1,000 Truck\n120 XL 428.000 PC 31.11 / 1,000 Truck\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 3 of 6",
+      "layout_text": "                                                                                                                    \n   PO Number - 4502859819                                                                                           \n   PO   SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PERDISCOUNT/ EX-FACT TOLERANCE\n   LINE#                                                                             UNIT SURCHARGE DATE SHIP MODE  \n    160                                                      L        404.000 PC 31.11 / 1,000           Truck      \n    160                                                      M       1,287.000 PC 31.11 / 1,000          Truck      \n                                                                                                                    \n    160                                                      S        718.000 PC 31.11 / 1,000           Truck      \n    160                                                      XL       428.000 PC 31.11 / 1,000           Truck      \n    160                                                      XS       229.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n                     2001437812 LBL LB07655 PPK1023 C1 MWW001 416219/QEB / 10,743.000 PC 334.25          + 2.0 /- 2.0\n                              LB 07655 PPK-1023 C1                                                                  \n        1001667108 / 10                                                                                             \n    110                                                      L        126.000 PC 31.11 / 1,000           Truck      \n    110                                                      M        312.000 PC 31.11 / 1,000           Truck      \n    110                                                      S        235.000 PC 31.11 / 1,000           Truck      \n    110                                                      XL        57.000 PC 31.11 / 1,000           Truck      \n    110                                                      XS        89.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667234 / 10                                                                                             \n    100                                                      L        800.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    100                                                      M        988.000 PC 31.11 / 1,000           Truck      \n    100                                                      S        663.000 PC 31.11 / 1,000           Truck      \n    100                                                      XL       467.000 PC 31.11 / 1,000           Truck      \n    100                                                      XS       261.000 PC 31.11 / 1,000           Truck      \n    100                                                      XXL      252.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667260 / 10                                                                                             \n    90                                                       L        800.000 PC 31.11 / 1,000           Truck      \n    90                                                       M        987.000 PC 31.11 / 1,000           Truck      \n    90                                                       S        663.000 PC 31.11 / 1,000           Truck      \n    90                                                       XL       466.000 PC 31.11 / 1,000           Truck      \n    90                                                       XS       260.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    90                                                       XXL      251.000 PC 31.11 / 1,000           Truck      \n        1001667399 / 10                                                                                             \n                                                                                                                    \n    120                                                      L        404.000 PC 31.11 / 1,000           Truck      \n    120                                                      M       1,287.000 PC 31.11 / 1,000          Truck      \n    120                                                      S        718.000 PC 31.11 / 1,000           Truck      \n    120                                                      XL       428.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n                        Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 3 of 6",
+      "word_count": 297,
+      "image_count": 1
+    },
+    {
+      "page_number": 4,
+      "text": "PO Number - 4502859819\nPO SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PER DISCOUNT/ EX-FACT TOLERANCE\nLINE# UNIT SURCHARGE DATE SHIP MODE\n120 XS 229.000 PC 31.11 / 1,000 Truck\n2001437813 LBL LB07655 PPK1023 C1 MWW001 416219/QE7 / 10,743.000 PC 334.25 + 2.0 /- 2.0\nLB 07655 PPK-1023 C1\n1001667108 / 10\n70 L 126.000 PC 31.11 / 1,000 Truck\n70 M 312.000 PC 31.11 / 1,000 Truck\n70 S 235.000 PC 31.11 / 1,000 Truck\n70 XL 57.000 PC 31.11 / 1,000 Truck\n70 XS 89.000 PC 31.11 / 1,000 Truck\n1001667234 / 10\n60 L 800.000 PC 31.11 / 1,000 Truck\n60 M 988.000 PC 31.11 / 1,000 Truck\n60 S 663.000 PC 31.11 / 1,000 Truck\n60 XL 467.000 PC 31.11 / 1,000 Truck\n60 XS 261.000 PC 31.11 / 1,000 Truck\n60 XXL 252.000 PC 31.11 / 1,000 Truck\n1001667260 / 10\n50 L 800.000 PC 31.11 / 1,000 Truck\n50 M 987.000 PC 31.11 / 1,000 Truck\n50 S 663.000 PC 31.11 / 1,000 Truck\n50 XL 466.000 PC 31.11 / 1,000 Truck\n50 XS 260.000 PC 31.11 / 1,000 Truck\n50 XXL 251.000 PC 31.11 / 1,000 Truck\n1001667399 / 10\n80 L 404.000 PC 31.11 / 1,000 Truck\n80 M 1,287.000 PC 31.11 / 1,000 Truck\n80 S 718.000 PC 31.11 / 1,000 Truck\n80 XL 428.000 PC 31.11 / 1,000 Truck\n80 XS 229.000 PC 31.11 / 1,000 Truck\n2001437817 LBL LB07655 PPK1023 C1 MWW001 416219/QEK 10,743.000 PC 334.25 + 2.0 /- 2.0\n/ LB 07655 PPK-1023 C1\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 4 of 6",
+      "layout_text": "                                                                                                                    \n   PO Number - 4502859819                                                                                           \n   PO   SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PERDISCOUNT/ EX-FACT TOLERANCE\n   LINE#                                                                             UNIT SURCHARGE DATE SHIP MODE  \n    120                                                      XS       229.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n                     2001437813 LBL LB07655 PPK1023 C1 MWW001 416219/QE7 / 10,743.000 PC 334.25          + 2.0 /- 2.0\n                              LB 07655 PPK-1023 C1                                                                  \n        1001667108 / 10                                                                                             \n                                                                                                                    \n    70                                                       L        126.000 PC 31.11 / 1,000           Truck      \n    70                                                       M        312.000 PC 31.11 / 1,000           Truck      \n    70                                                       S        235.000 PC 31.11 / 1,000           Truck      \n    70                                                       XL        57.000 PC 31.11 / 1,000           Truck      \n    70                                                       XS        89.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667234 / 10                                                                                             \n    60                                                       L        800.000 PC 31.11 / 1,000           Truck      \n    60                                                       M        988.000 PC 31.11 / 1,000           Truck      \n    60                                                       S        663.000 PC 31.11 / 1,000           Truck      \n    60                                                       XL       467.000 PC 31.11 / 1,000           Truck      \n    60                                                       XS       261.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    60                                                       XXL      252.000 PC 31.11 / 1,000           Truck      \n        1001667260 / 10                                                                                             \n                                                                                                                    \n    50                                                       L        800.000 PC 31.11 / 1,000           Truck      \n    50                                                       M        987.000 PC 31.11 / 1,000           Truck      \n    50                                                       S        663.000 PC 31.11 / 1,000           Truck      \n    50                                                       XL       466.000 PC 31.11 / 1,000           Truck      \n    50                                                       XS       260.000 PC 31.11 / 1,000           Truck      \n    50                                                       XXL      251.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667399 / 10                                                                                             \n    80                                                       L        404.000 PC 31.11 / 1,000           Truck      \n    80                                                       M       1,287.000 PC 31.11 / 1,000          Truck      \n    80                                                       S        718.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    80                                                       XL       428.000 PC 31.11 / 1,000           Truck      \n    80                                                       XS       229.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n                     2001437817 LBL LB07655 PPK1023 C1 MWW001 416219/QEK 10,743.000 PC 334.25            + 2.0 /- 2.0\n                              / LB 07655 PPK-1023 C1                                                                \n                                                                                                                    \n                        Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 4 of 6",
+      "word_count": 292,
+      "image_count": 1
+    },
+    {
+      "page_number": 5,
+      "text": "PO Number - 4502859819\nPO SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PER DISCOUNT/ EX-FACT TOLERANCE\nLINE# UNIT SURCHARGE DATE SHIP MODE\n1001667108 / 10\n30 L 126.000 PC 31.11 / 1,000 Truck\n30 M 312.000 PC 31.11 / 1,000 Truck\n30 S 235.000 PC 31.11 / 1,000 Truck\n30 XL 57.000 PC 31.11 / 1,000 Truck\n30 XS 89.000 PC 31.11 / 1,000 Truck\n1001667234 / 10\n20 L 800.000 PC 31.11 / 1,000 Truck\n20 M 988.000 PC 31.11 / 1,000 Truck\n20 S 663.000 PC 31.11 / 1,000 Truck\n20 XL 467.000 PC 31.11 / 1,000 Truck\n20 XS 261.000 PC 31.11 / 1,000 Truck\n20 XXL 252.000 PC 31.11 / 1,000 Truck\n1001667260 / 10\n10 L 800.000 PC 31.11 / 1,000 Truck\n10 M 987.000 PC 31.11 / 1,000 Truck\n10 S 663.000 PC 31.11 / 1,000 Truck\n10 XL 466.000 PC 31.11 / 1,000 Truck\n10 XS 260.000 PC 31.11 / 1,000 Truck\n10 XXL 251.000 PC 31.11 / 1,000 Truck\n1001667399 / 10\n40 L 404.000 PC 31.11 / 1,000 Truck\n40 M 1,287.000 PC 31.11 / 1,000 Truck\n40 S 718.000 PC 31.11 / 1,000 Truck\n40 XL 428.000 PC 31.11 / 1,000 Truck\n40 XS 229.000 PC 31.11 / 1,000 Truck\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 5 of 6",
+      "layout_text": "                                                                                                                    \n   PO Number - 4502859819                                                                                           \n   PO   SALES ORDER/ LINE ITEM CODE ITEM DESCRIPTION/ SUPPLIER REF SIZE SIZE QTY UOM PRICE/PERDISCOUNT/ EX-FACT TOLERANCE\n   LINE#                                                                             UNIT SURCHARGE DATE SHIP MODE  \n        1001667108 / 10                                                                                             \n    30                                                       L        126.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    30                                                       M        312.000 PC 31.11 / 1,000           Truck      \n    30                                                       S        235.000 PC 31.11 / 1,000           Truck      \n    30                                                       XL        57.000 PC 31.11 / 1,000           Truck      \n    30                                                       XS        89.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667234 / 10                                                                                             \n    20                                                       L        800.000 PC 31.11 / 1,000           Truck      \n    20                                                       M        988.000 PC 31.11 / 1,000           Truck      \n    20                                                       S        663.000 PC 31.11 / 1,000           Truck      \n    20                                                       XL       467.000 PC 31.11 / 1,000           Truck      \n    20                                                       XS       261.000 PC 31.11 / 1,000           Truck      \n    20                                                       XXL      252.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667260 / 10                                                                                             \n                                                                                                                    \n    10                                                       L        800.000 PC 31.11 / 1,000           Truck      \n    10                                                       M        987.000 PC 31.11 / 1,000           Truck      \n    10                                                       S        663.000 PC 31.11 / 1,000           Truck      \n    10                                                       XL       466.000 PC 31.11 / 1,000           Truck      \n    10                                                       XS       260.000 PC 31.11 / 1,000           Truck      \n    10                                                       XXL      251.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n        1001667399 / 10                                                                                             \n    40                                                       L        404.000 PC 31.11 / 1,000           Truck      \n    40                                                       M       1,287.000 PC 31.11 / 1,000          Truck      \n    40                                                       S        718.000 PC 31.11 / 1,000           Truck      \n    40                                                       XL       428.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n    40                                                       XS       229.000 PC 31.11 / 1,000           Truck      \n                                                                                                                    \n                                                                                                                    \n                                                                                                                    \n                                                                                                                    \n                                                                                                                    \n                                                                                                                    \n                                                                                                                    \n                                                                                                                    \n                        Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 5 of 6",
+      "word_count": 246,
+      "image_count": 1
+    },
+    {
+      "page_number": 6,
+      "text": "PO Number - 4502859819\nREMARKS\n36014990\n2026/7\nNote: Accepting this contract supplier agree to strictly adhere to the restrictions imposed by The U.S Department of Treasury#s Office of Foreign Assets Control (#OFAC#) of terminating all such transactions, dealings\nand/or engagements of any form or nature with XPCC (Xinjiang Production and Construction Corps ) or any of its Affiliates or any other entity in the Xingjian Province, China.\nTERMS AND CONDITIONS\n1. The description, quantity and any technical specification for the goods shall be those set out in the above order, and shall not be deviated and/or 10. The Seller shall not use any metal nails, pins, clips, staples or like material for the purpose of packing. The Supplier hereby ensures and\namended in any manner what-so ever, without the prior written approval of the Purchaser. guarantees to the Purchaser that all cartons and packing materials shall be anti-metal.\n2. Unless otherwise agreed , if the Seller is unable to deliver goods on the date specified on the Purchaser's Purchase order , the Seller will be liable for any 11. This document forms part and parcel of the agreement between the Purchaser and the Seller and the Parties shall be bound by the terms\ncosts including the cost of airfreight, if any, that arise as a result of late delivery. The Seller shall indemnify and hold harmless the Purchaser against any hereof.\nlosses or claims arising as a result of such a delay. 12. Upon Delivery of the order, the Purchaser shall have the right to reject the Order in relation to the quantity and quality of the goods\n3. The Seller must forward a proforma invoice accepting the order submitted by the Purchaser, within the time periods stipulated below: delivered at any time. The Purchaser shall neither be liable to return any rejected quantities to the Seller nor required to pay for same. The\nPO Type Time period to submit Proforma Invoice Seller may be required to replenish quantities rejected and the Seller shall do so within the timelines given by the Purchaser.\nRegular 48 hrs 13. The Supplier shall adhere strictly to the terms and conditions relating to price, delivery and packaging stipulated in the Purchase Order.\nPriority 24 hrs 14. Payment will be made on the agreed payment terms and in the currency stipulated in the Purchase Order.\nHigh Priority 24 hrs 15. For Air Freight, we require only scanned copies of the Invoice/Packing List/Air Way Bill (MAWB & HAWB) - But original documents\n4. The Purchase Order number and material number (or its equivalent) must be mentioned on all documents sent by the Seller. should be handed over to the forwarding agent at the time of handing over the cargo.\n5. The Seller shall ship the exact quantity ordered, as per the Purchase Order, subject to a maximum acceptable tolerance limit (+/- %) as stated in the 16. Signed copies of the above documents should reach us via e-mail to airimports@masholdings.com within 12 hrs from the ETD. If the Air\nPurchase Order. The Purchaser shall not be liable for any products shipped in excess of this limit. The Purchaser shall not be liable to return to the transit is less than 12 hrs, please e-mail the Commercial Invoice/Packing list along with the flight details 6 hrs prior to ETA. Subject line of the\nSuppliers the excess products supplied by the Supplier over the agreed limit and will not be liable to pay for such quantities above the agreed excess limit. e-mail would be \"Name of the supplier/Invoice No/PO no\".\n6. The Seller may, with the prior consent of the Purchaser, split the deliveries of Products of a PO provided that all deliveries pertaining to a PO are made 17. Shipping Marks :\nupto the required quantities (inclusive of tolerances) within the agreed time duration with the purchaser. Company Name\n7. Any shipments that are below the lower limit of the ordered quantity shall not be acceptable and shall be replenished by the Seller within the time District\nperiod specified by the Purchaser. Any resultant additional costs, damages or losses shall be borne by the Seller. Plant Code\n8. All material must conform to the testing requirements set out by the end customer, which is specified in the end customer manual. Sellers must test all Country\nthe materials in an accredited laboratory at their cost and submit the approved test report to the buyer prior to shipment as required. The Seller shall also CT. NO :...... of ...\nsubmit originals of all mandatory laboratory test reports and shipping samples as required by the Purchaser, before any bulk shipment is affected. 18. Actual carton dimensions/Gross weight/ Net weight/ Volume weight should be clearly marked on the Invoice & P/L. Shipping documents\nNotwithstanding the above, if any goods delivered by the Seller, are not fit for the purposes of the customer of the Purchaser, the Purchaser may return should be as per the correct INCO terms & Payment terms.\nsaid goods to the Seller at the Seller's cost and the Purchaser shall not be liable to make payment for the same. 19. Relevant HS Code per item should be marked in the Description column on the Commercial Invoice. Item Description should be clearly\n9. If any customer rejects or returns a product on or after the sale of the product to the end user or there are any claims by third parties, solely due to indicated (E.g. Knit Fabric, Elastics, Lace, etc) on the Invoice. Shipping Mode should be indicated on the Invoice.\nquality issues with the material/s supplied, by the Seller, the Seller shall bear the all liability of such claim or value. 20. If the above Items 11 to 17 are not fulfilled there will be a charge back of US$ 50 per shipment & demurrages, if any.\nTOTAL NET VALUE EXCLUDING TAX : USD 1,671.25\nPREPARED BY DATE AUTHORIZED BY AUTHORIZED BY\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6\nAcceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6",
+      "layout_text": "                                                                                                                    \n   PO Number - 4502859819                                                                                           \n   REMARKS                                                                                                          \n                                                                                                                    \n   36014990                                                                                                         \n   2026/7                                                                                                           \n                                                                                                                    \n    Note: Accepting this contract supplier agree to strictly adhere to the restrictions imposed by The U.S Department of Treasury#s Office of Foreign Assets Control (#OFAC#) of terminating all such transactions, dealings\n    and/or engagements of any form or nature with XPCC (Xinjiang Production and Construction Corps ) or any of its Affiliates or any other entity in the Xingjian Province, China.\n    TERMS AND CONDITIONS                                                                                            \n    1. The description, quantity and any technical specification for the goods shall be those set out in the above order, and shall not be deviated and/or 10. The Seller shall not use any metal nails, pins, clips, staples or like material for the purpose of packing. The Supplier hereby ensures and\n    amended in any manner what-so ever, without the prior written approval of the Purchaser. guarantees to the Purchaser that all cartons and packing materials shall be anti-metal.\n    2. Unless otherwise agreed , if the Seller is unable to deliver goods on the date specified on the Purchaser's Purchase order , the Seller will be liable for any 11. This document forms part and parcel of the agreement between the Purchaser and the Seller and the Parties shall be bound by the terms\n    costs including the cost of airfreight, if any, that arise as a result of late delivery. The Seller shall indemnify and hold harmless the Purchaser against any hereof.\n    losses or claims arising as a result of such a delay.     12. Upon Delivery of the order, the Purchaser shall have the right to reject the Order in relation to the quantity and quality of the goods\n    3. The Seller must forward a proforma invoice accepting the order submitted by the Purchaser, within the time periods stipulated below: delivered at any time. The Purchaser shall neither be liable to return any rejected quantities to the Seller nor required to pay for same. The\n    PO Type Time period to submit Proforma Invoice            Seller may be required to replenish quantities rejected and the Seller shall do so within the timelines given by the Purchaser.\n    Regular    48 hrs                                         13. The Supplier shall adhere strictly to the terms and conditions relating to price, delivery and packaging stipulated in the Purchase Order.\n    Priority   24 hrs                                         14. Payment will be made on the agreed payment terms and in the currency stipulated in the Purchase Order.\n    High Priority 24 hrs                                      15. For Air Freight, we require only scanned copies of the Invoice/Packing List/Air Way Bill (MAWB & HAWB) - But original documents\n    4. The Purchase Order number and material number (or its equivalent) must be mentioned on all documents sent by the Seller. should be handed over to the forwarding agent at the time of handing over the cargo.\n    5. The Seller shall ship the exact quantity ordered, as per the Purchase Order, subject to a maximum acceptable tolerance limit (+/- %) as stated in the 16. Signed copies of the above documents should reach us via e-mail to airimports@masholdings.com within 12 hrs from the ETD. If the Air\n    Purchase Order. The Purchaser shall not be liable for any products shipped in excess of this limit. The Purchaser shall not be liable to return to the transit is less than 12 hrs, please e-mail the Commercial Invoice/Packing list along with the flight details 6 hrs prior to ETA. Subject line of the\n    Suppliers the excess products supplied by the Supplier over the agreed limit and will not be liable to pay for such quantities above the agreed excess limit. e-mail would be \"Name of the supplier/Invoice No/PO no\".\n    6. The Seller may, with the prior consent of the Purchaser, split the deliveries of Products of a PO provided that all deliveries pertaining to a PO are made 17. Shipping Marks :\n    upto the required quantities (inclusive of tolerances) within the agreed time duration with the purchaser. Company Name\n    7. Any shipments that are below the lower limit of the ordered quantity shall not be acceptable and shall be replenished by the Seller within the time District\n    period specified by the Purchaser. Any resultant additional costs, damages or losses shall be borne by the Seller. Plant Code\n    8. All material must conform to the testing requirements set out by the end customer, which is specified in the end customer manual. Sellers must test all Country\n    the materials in an accredited laboratory at their cost and submit the approved test report to the buyer prior to shipment as required. The Seller shall also CT. NO :...... of ...\n    submit originals of all mandatory laboratory test reports and shipping samples as required by the Purchaser, before any bulk shipment is affected. 18. Actual carton dimensions/Gross weight/ Net weight/ Volume weight should be clearly marked on the Invoice & P/L. Shipping documents\n    Notwithstanding the above, if any goods delivered by the Seller, are not fit for the purposes of the customer of the Purchaser, the Purchaser may return should be as per the correct INCO terms & Payment terms.\n    said goods to the Seller at the Seller's cost and the Purchaser shall not be liable to make payment for the same. 19. Relevant HS Code per item should be marked in the Description column on the Commercial Invoice. Item Description should be clearly\n    9. If any customer rejects or returns a product on or after the sale of the product to the end user or there are any claims by third parties, solely due to indicated (E.g. Knit Fabric, Elastics, Lace, etc) on the Invoice. Shipping Mode should be indicated on the Invoice.\n    quality issues with the material/s supplied, by the Seller, the Seller shall bear the all liability of such claim or value. 20. If the above Items 11 to 17 are not fulfilled there will be a charge back of US$ 50 per shipment & demurrages, if any.\n                                    TOTAL  NET  VALUE  EXCLUDING   TAX  :                           USD  1,671.25   \n                                                                                                                    \n                                                                                                                    \n                                                                                                                    \n     PREPARED BY      DATE                         AUTHORIZED BY                               AUTHORIZED BY        \n                                                                                                                    \n                                                                                                                    \n   Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6\n                                                                                                                    \n                        Acceptance of this order is subject to the terms and conditions as per incorporated and made a part hereof. This is a computer-generated document, signatures not required Page 6 of 6",
+      "word_count": 1047,
+      "image_count": 1
+    }
+  ]
+}
