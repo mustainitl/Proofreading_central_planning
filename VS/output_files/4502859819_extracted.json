@@ -1456,3 +1456,81 @@
     }
   ]
 }
+
+
+[
+    {
+        "item_code": "2001431649",
+        "item_description": "LBL LB07655 PPK1023 C1 MWW001 416213/SPT / LB 0*7655* PPK-1023 C1",
+        {
+          "sales_order": "1001667108 / 10",
+          "sizes": [
+              {
+                  "po_line": "190",
+                  "size": "L",
+                  "quantity": 126
+              }, 
+              {
+                  "po_line": "190",
+                  "size": "M",
+                  "quantity": 312
+              }, 
+             .........
+          ]
+        },
+        {
+          "sales_order": "1001667234 / 10",
+          "sizes": [
+              {
+                  "po_line": "180",
+                  "size": "L",
+                  "quantity": 126
+              }, 
+              {
+                  "po_line": "180",
+                  "size": "M",
+                  "quantity": 312
+              }, 
+              ........
+          ]
+        }
+    },
+    {
+        "item_code": "2001431649",
+        "item_description": "LBL LB07655 PPK1023 C1 MWW001 416213/SPT / LB 0*7655* PPK-1023 C1",
+        {
+          "sales_order": "1001667108 / 10",
+          "sizes": [
+              {
+                  "po_line": "190",
+                  "size": "L",
+                  "quantity": 126
+              }, 
+              {
+                  "po_line": "190",
+                  "size": "M",
+                  "quantity": 312
+              }, 
+             .........
+          ]
+        },
+        {
+          "sales_order": "1001667234 / 10",
+          "sizes": [
+              {
+                  "po_line": "180",
+                  "size": "L",
+                  "quantity": 126
+              }, 
+              {
+                  "po_line": "180",
+                  "size": "M",
+                  "quantity": 312
+              }, 
+              ........
+          ]
+        }
+        ..........
+    }
+    .............
+]
