@@ -1,5 +1,27 @@
+# Python virtual environments
 .venv/
-.local/
-.vscode/
 venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Local configuration
+.local/
+
+# VS Code settings
+.vscode/
+
+# Input/uploaded files
 input_files/
+
+# Frontend dependencies and build files
+node_modules/
+.next/
+
+# Environment files containing secrets
+.env
+.env.*
+!.env.example
+!env.example
