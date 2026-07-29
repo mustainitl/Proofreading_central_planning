@@ -1,0 +1,689 @@
+{
+  "4502859819": {
+    "po_number": "4502859819",
+    "factory_id": "36014990",
+    "date_of_mfr": "2026/7",
+    "items": [
+      {
+        "item_code": "2001431649",
+        "item_description": "LBL LB07655 PPK1023 C1 MWW001 416213/SPT / LB 07655 PPK-1023 C1",
+        "sales_orders": [
+          {
+            "sales_order": "1001667108 / 10",
+            "sizes": [
+              {
+                "po_line": "190",
+                "size": "L",
+                "quantity": 126
+              },
+              {
+                "po_line": "190",
+                "size": "M",
+                "quantity": 312
+              },
+              {
+                "po_line": "190",
+                "size": "S",
+                "quantity": 235
+              },
+              {
+                "po_line": "190",
+                "size": "XL",
+                "quantity": 57
+              },
+              {
+                "po_line": "190",
+                "size": "XS",
+                "quantity": 89
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667234 / 10",
+            "sizes": [
+              {
+                "po_line": "180",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "180",
+                "size": "M",
+                "quantity": 988
+              },
+              {
+                "po_line": "180",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "180",
+                "size": "XL",
+                "quantity": 467
+              },
+              {
+                "po_line": "180",
+                "size": "XS",
+                "quantity": 261
+              },
+              {
+                "po_line": "180",
+                "size": "XXL",
+                "quantity": 252
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667260 / 10",
+            "sizes": [
+              {
+                "po_line": "170",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "170",
+                "size": "M",
+                "quantity": 987
+              },
+              {
+                "po_line": "170",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "170",
+                "size": "XL",
+                "quantity": 466
+              },
+              {
+                "po_line": "170",
+                "size": "XS",
+                "quantity": 260
+              },
+              {
+                "po_line": "170",
+                "size": "XXL",
+                "quantity": 251
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667399 / 10",
+            "sizes": [
+              {
+                "po_line": "200",
+                "size": "L",
+                "quantity": 404
+              },
+              {
+                "po_line": "200",
+                "size": "M",
+                "quantity": 1287
+              },
+              {
+                "po_line": "200",
+                "size": "S",
+                "quantity": 718
+              },
+              {
+                "po_line": "200",
+                "size": "XL",
+                "quantity": 428
+              },
+              {
+                "po_line": "200",
+                "size": "XS",
+                "quantity": 229
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "item_code": "2001431709",
+        "item_description": "LBL LB07655 PPK1023 C1 MWW001 416213/SEQ / LB 07655 PPK-1023 C1",
+        "sales_orders": [
+          {
+            "sales_order": "1001667108 / 10",
+            "sizes": [
+              {
+                "po_line": "150",
+                "size": "L",
+                "quantity": 126
+              },
+              {
+                "po_line": "150",
+                "size": "M",
+                "quantity": 312
+              },
+              {
+                "po_line": "150",
+                "size": "S",
+                "quantity": 235
+              },
+              {
+                "po_line": "150",
+                "size": "XL",
+                "quantity": 57
+              },
+              {
+                "po_line": "150",
+                "size": "XS",
+                "quantity": 89
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667234 / 10",
+            "sizes": [
+              {
+                "po_line": "140",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "140",
+                "size": "M",
+                "quantity": 988
+              },
+              {
+                "po_line": "140",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "140",
+                "size": "XL",
+                "quantity": 467
+              },
+              {
+                "po_line": "140",
+                "size": "XS",
+                "quantity": 261
+              },
+              {
+                "po_line": "140",
+                "size": "XXL",
+                "quantity": 252
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667260 / 10",
+            "sizes": [
+              {
+                "po_line": "130",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "130",
+                "size": "M",
+                "quantity": 987
+              },
+              {
+                "po_line": "130",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "130",
+                "size": "XL",
+                "quantity": 466
+              },
+              {
+                "po_line": "130",
+                "size": "XS",
+                "quantity": 260
+              },
+              {
+                "po_line": "130",
+                "size": "XXL",
+                "quantity": 251
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667399 / 10",
+            "sizes": [
+              {
+                "po_line": "160",
+                "size": "L",
+                "quantity": 404
+              },
+              {
+                "po_line": "160",
+                "size": "M",
+                "quantity": 1287
+              },
+              {
+                "po_line": "160",
+                "size": "S",
+                "quantity": 718
+              },
+              {
+                "po_line": "160",
+                "size": "XL",
+                "quantity": 428
+              },
+              {
+                "po_line": "160",
+                "size": "XS",
+                "quantity": 229
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "item_code": "2001437812",
+        "item_description": "LBL LB07655 PPK1023 C1 MWW001 416219/QEB / LB 07655 PPK-1023 C1",
+        "sales_orders": [
+          {
+            "sales_order": "1001667108 / 10",
+            "sizes": [
+              {
+                "po_line": "110",
+                "size": "L",
+                "quantity": 126
+              },
+              {
+                "po_line": "110",
+                "size": "M",
+                "quantity": 312
+              },
+              {
+                "po_line": "110",
+                "size": "S",
+                "quantity": 235
+              },
+              {
+                "po_line": "110",
+                "size": "XL",
+                "quantity": 57
+              },
+              {
+                "po_line": "110",
+                "size": "XS",
+                "quantity": 89
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667234 / 10",
+            "sizes": [
+              {
+                "po_line": "100",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "100",
+                "size": "M",
+                "quantity": 988
+              },
+              {
+                "po_line": "100",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "100",
+                "size": "XL",
+                "quantity": 467
+              },
+              {
+                "po_line": "100",
+                "size": "XS",
+                "quantity": 261
+              },
+              {
+                "po_line": "100",
+                "size": "XXL",
+                "quantity": 252
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667260 / 10",
+            "sizes": [
+              {
+                "po_line": "90",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "90",
+                "size": "M",
+                "quantity": 987
+              },
+              {
+                "po_line": "90",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "90",
+                "size": "XL",
+                "quantity": 466
+              },
+              {
+                "po_line": "90",
+                "size": "XS",
+                "quantity": 260
+              },
+              {
+                "po_line": "90",
+                "size": "XXL",
+                "quantity": 251
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667399 / 10",
+            "sizes": [
+              {
+                "po_line": "120",
+                "size": "L",
+                "quantity": 404
+              },
+              {
+                "po_line": "120",
+                "size": "M",
+                "quantity": 1287
+              },
+              {
+                "po_line": "120",
+                "size": "S",
+                "quantity": 718
+              },
+              {
+                "po_line": "120",
+                "size": "XL",
+                "quantity": 428
+              },
+              {
+                "po_line": "120",
+                "size": "XS",
+                "quantity": 229
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "item_code": "2001437813",
+        "item_description": "LBL LB07655 PPK1023 C1 MWW001 416219/QE7 / LB 07655 PPK-1023 C1",
+        "sales_orders": [
+          {
+            "sales_order": "1001667108 / 10",
+            "sizes": [
+              {
+                "po_line": "70",
+                "size": "L",
+                "quantity": 126
+              },
+              {
+                "po_line": "70",
+                "size": "M",
+                "quantity": 312
+              },
+              {
+                "po_line": "70",
+                "size": "S",
+                "quantity": 235
+              },
+              {
+                "po_line": "70",
+                "size": "XL",
+                "quantity": 57
+              },
+              {
+                "po_line": "70",
+                "size": "XS",
+                "quantity": 89
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667234 / 10",
+            "sizes": [
+              {
+                "po_line": "60",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "60",
+                "size": "M",
+                "quantity": 988
+              },
+              {
+                "po_line": "60",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "60",
+                "size": "XL",
+                "quantity": 467
+              },
+              {
+                "po_line": "60",
+                "size": "XS",
+                "quantity": 261
+              },
+              {
+                "po_line": "60",
+                "size": "XXL",
+                "quantity": 252
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667260 / 10",
+            "sizes": [
+              {
+                "po_line": "50",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "50",
+                "size": "M",
+                "quantity": 987
+              },
+              {
+                "po_line": "50",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "50",
+                "size": "XL",
+                "quantity": 466
+              },
+              {
+                "po_line": "50",
+                "size": "XS",
+                "quantity": 260
+              },
+              {
+                "po_line": "50",
+                "size": "XXL",
+                "quantity": 251
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667399 / 10",
+            "sizes": [
+              {
+                "po_line": "80",
+                "size": "L",
+                "quantity": 404
+              },
+              {
+                "po_line": "80",
+                "size": "M",
+                "quantity": 1287
+              },
+              {
+                "po_line": "80",
+                "size": "S",
+                "quantity": 718
+              },
+              {
+                "po_line": "80",
+                "size": "XL",
+                "quantity": 428
+              },
+              {
+                "po_line": "80",
+                "size": "XS",
+                "quantity": 229
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "item_code": "2001437817",
+        "item_description": "LBL LB07655 PPK1023 C1 MWW001 416219/QEK / LB 07655 PPK-1023 C1",
+        "sales_orders": [
+          {
+            "sales_order": "1001667108 / 10",
+            "sizes": [
+              {
+                "po_line": "30",
+                "size": "L",
+                "quantity": 126
+              },
+              {
+                "po_line": "30",
+                "size": "M",
+                "quantity": 312
+              },
+              {
+                "po_line": "30",
+                "size": "S",
+                "quantity": 235
+              },
+              {
+                "po_line": "30",
+                "size": "XL",
+                "quantity": 57
+              },
+              {
+                "po_line": "30",
+                "size": "XS",
+                "quantity": 89
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667234 / 10",
+            "sizes": [
+              {
+                "po_line": "20",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "20",
+                "size": "M",
+                "quantity": 988
+              },
+              {
+                "po_line": "20",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "20",
+                "size": "XL",
+                "quantity": 467
+              },
+              {
+                "po_line": "20",
+                "size": "XS",
+                "quantity": 261
+              },
+              {
+                "po_line": "20",
+                "size": "XXL",
+                "quantity": 252
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667260 / 10",
+            "sizes": [
+              {
+                "po_line": "10",
+                "size": "L",
+                "quantity": 800
+              },
+              {
+                "po_line": "10",
+                "size": "M",
+                "quantity": 987
+              },
+              {
+                "po_line": "10",
+                "size": "S",
+                "quantity": 663
+              },
+              {
+                "po_line": "10",
+                "size": "XL",
+                "quantity": 466
+              },
+              {
+                "po_line": "10",
+                "size": "XS",
+                "quantity": 260
+              },
+              {
+                "po_line": "10",
+                "size": "XXL",
+                "quantity": 251
+              }
+            ]
+          },
+          {
+            "sales_order": "1001667399 / 10",
+            "sizes": [
+              {
+                "po_line": "40",
+                "size": "L",
+                "quantity": 404
+              },
+              {
+                "po_line": "40",
+                "size": "M",
+                "quantity": 1287
+              },
+              {
+                "po_line": "40",
+                "size": "S",
+                "quantity": 718
+              },
+              {
+                "po_line": "40",
+                "size": "XL",
+                "quantity": 428
+              },
+              {
+                "po_line": "40",
+                "size": "XS",
+                "quantity": 229
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
