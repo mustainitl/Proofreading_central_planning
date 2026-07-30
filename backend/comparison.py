@@ -10,9 +10,11 @@ from backend.comparison_helpers import (
     first_ten_digit_sales_order,
     full_sales_order,
     is_missing,
+    mfr_date_status,
     overall_status,
     product_code_status,
     purchase_order_context,
+    vsd_status,
 )
 
 # -------------------------------------------------------------------------
@@ -259,10 +261,7 @@ def compare_item_code(
     purchase_order: dict[str, Any],
     comparison_context: dict[str, Any],
 ) -> dict[str, Any]:
-    customer_order_data = comparison_context.get(
-        "customer_order_number",
-        {},
-    )
+    customer_order_data = comparison_context.get("customer_order_number", {})
     item_code_data = customer_order_data.get("item_code", {})
 
     return {
@@ -281,10 +280,7 @@ def compare_sales_order(
     purchase_order: dict[str, Any],
     comparison_context: dict[str, Any],
 ) -> dict[str, Any]:
-    sales_order_data = comparison_context.get(
-        "individual_sales_order",
-        {},
-    )
+    sales_order_data = comparison_context.get("individual_sales_order", {})
 
     return {
         "field": "Sales Order Number",
@@ -302,10 +298,7 @@ def compare_po_line(
     purchase_order: dict[str, Any],
     comparison_context: dict[str, Any],
 ) -> dict[str, Any]:
-    customer_order_data = comparison_context.get(
-        "customer_order_number",
-        {},
-    )
+    customer_order_data = comparison_context.get("customer_order_number", {})
     po_line_data = customer_order_data.get("po_line", {})
 
     return {
@@ -325,29 +318,20 @@ def compare_product_code(
     purchase_order: dict[str, Any],
     comparison_context: dict[str, Any],
 ) -> dict[str, Any]:
-    work_order_item_code = str(
-        work_order.get("item_code") or ""
-    ).strip()
+    work_order_item_code = str(work_order.get("item_code") or "").strip()
 
     work_order_product_code = work_order.get("product_code")
     purchase_order_item_description = None
 
     # Find the PO item block having the same item code.
     for item in purchase_order.get("items", []):
-        purchase_order_item_code = str(
-            item.get("item_code") or ""
-        ).strip()
+        purchase_order_item_code = str(item.get("item_code") or "").strip()
 
         if purchase_order_item_code == work_order_item_code:
-            purchase_order_item_description = item.get(
-                "item_description"
-            )
+            purchase_order_item_description = item.get("item_description")
             break
 
-    status = product_code_status(
-        work_order_product_code,
-        purchase_order_item_description,
-    )
+    status = product_code_status(work_order_product_code, purchase_order_item_description)
 
     comparison_context["product_code"] = {
         "item_code": work_order_item_code or None,
@@ -364,8 +348,81 @@ def compare_product_code(
         "status": status,
     }
 
+# ---------------------------------------------------------
+# VSD# comparison
+# ---------------------------------------------------------
+def compare_vsd(
+    work_order: dict[str, Any],
+    purchase_order: dict[str, Any],
+    comparison_context: dict[str, Any],
+) -> dict[str, Any]:
+    work_order_vsd = work_order.get("vsd")
+
+    # The Product Code comparison already found the correct
+    # PO item and stored its item_description here.
+    product_code_data = comparison_context.get("product_code", {})
+
+    purchase_order_item_description = (product_code_data.get("purchase_order"))
+
+    status = vsd_status(work_order_vsd, purchase_order_item_description)
+
+    comparison_context["vsd"] = {
+        "work_order": work_order_vsd,
+        "purchase_order": purchase_order_item_description,
+        "status": status,
+    }
+
+    return {
+        "field": "VSD #",
+        "work_order": work_order_vsd,
+        "purchase_order": purchase_order_item_description,
+        "booking_sheet": None,
+        "status": status,
+    }
 
 
+# -----------------------------------------------------------
+# Factory ID comparison
+# -----------------------------------------------------------
+def compare_factory_id(
+    work_order: dict[str, Any],
+    purchase_order: dict[str, Any],
+    comparison_context: dict[str, Any],
+) -> dict[str, Any]:
+    work_order_value = work_order.get("factory_id")
+    purchase_order_value = purchase_order.get("factory_id")
+
+    status = exact_status(work_order_value, purchase_order_value)
+
+    return {
+        "field": "Factory ID",
+        "work_order": work_order_value,
+        "purchase_order": purchase_order_value,
+        "booking_sheet": None,
+        "status": status,
+    }
+
+
+# -----------------------------------------------------------
+# Date of Manufacturing(MFR) comparison
+# -----------------------------------------------------------
+def compare_date_of_mfr(
+    work_order: dict[str, Any],
+    purchase_order: dict[str, Any],
+    comparison_context: dict[str, Any],
+) -> dict[str, Any]:
+    work_order_value = work_order.get("date_of_mfr")
+    purchase_order_value = purchase_order.get("date_of_mfr")
+
+    status = mfr_date_status(work_order_value, purchase_order_value)
+
+    return {
+        "field": "Date of MFR",
+        "work_order": work_order_value,
+        "purchase_order": purchase_order_value,
+        "booking_sheet": None,
+        "status": status,
+    }
 
 
 
@@ -389,15 +446,14 @@ def compare_all_fields(
 
     return [
         compare_po_number(work_order, purchase_order, comparison_context),
-        compare_customer_order_number(
-            work_order,
-            purchase_order,
-            comparison_context,
-        ),
+        compare_customer_order_number(work_order, purchase_order, comparison_context),
         compare_item_code(work_order, purchase_order, comparison_context),
         compare_sales_order(work_order, purchase_order, comparison_context),
         compare_po_line(work_order, purchase_order, comparison_context),
         compare_product_code(work_order, purchase_order, comparison_context),
+        compare_vsd(work_order, purchase_order, comparison_context),
+        compare_factory_id(work_order, purchase_order, comparison_context),
+        compare_date_of_mfr(work_order, purchase_order, comparison_context),
     ]
 
 

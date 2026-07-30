@@ -1,4 +1,8 @@
-"""Small helper functions used by the field comparisons."""
+"""Small helper functions used by the field comparisons.
+
+Initially work order used to develop these logic was: BD01529397W
+"""
+
 
 import re
 from typing import Any
@@ -18,11 +22,7 @@ def exact_status(
     if is_missing(work_order_value) or is_missing(target_value):
         return "missing"
 
-    return (
-        "match"
-        if work_order_value == target_value
-        else "mismatch"
-    )
+    return ("match" if work_order_value == target_value else "mismatch")
 
 
 def first_ten_digit_sales_order(value: Any) -> str | None:
@@ -96,7 +96,98 @@ def product_code_status(
 
 
 
+# -----------------------------------------------------------
+# VSD comparison helpers
+# -----------------------------------------------------------
+def vsd_status(
+    work_order_vsd: Any,
+    purchase_order_item_description: Any,
+) -> str:
+    if (is_missing(work_order_vsd) or is_missing(purchase_order_item_description)):
+        return "missing"
 
+    normalized_work_order_vsd = (
+        str(work_order_vsd)
+        .upper()
+        .replace(" ", "")
+        .replace("-", "")
+        .replace("/", "")
+    )
+
+    purchase_order_tokens = (
+        str(purchase_order_item_description)
+        .upper()
+        .split()
+    )
+
+    normalized_purchase_order_tokens = [
+        token
+        .replace("-", "")
+        .replace("/", "")
+        for token in purchase_order_tokens
+        if token != "/"
+    ]
+
+    is_match = (normalized_work_order_vsd in normalized_purchase_order_tokens)
+
+    return "match" if is_match else "mismatch"
+
+
+# -----------------------------------------------------------
+# MFR Date comparison helpers
+# -----------------------------------------------------------
+def normalize_mfr_date(value: Any) -> str | None:
+    if is_missing(value):
+        return None
+
+    date_parts = re.findall(r"\d+", str(value))
+
+    if len(date_parts) != 2:
+        return None
+
+    first_part = date_parts[0]
+    second_part = date_parts[1]
+
+    # Format: YYYY/MM
+    if len(first_part) == 4:
+        year = int(first_part)
+        month = int(second_part)
+
+    # Format: MM/YYYY
+    elif len(second_part) == 4:
+        month = int(first_part)
+        year = int(second_part)
+
+    # Format: MM/YY or MM YY
+    else:
+        month = int(first_part)
+        year = 2000 + int(second_part)
+
+    if month < 1 or month > 12:
+        return None
+
+    return f"{year:04d}-{month:02d}"
+
+
+def mfr_date_status(
+    work_order_value: Any,
+    purchase_order_value: Any,
+) -> str:
+    if (is_missing(work_order_value) or is_missing(purchase_order_value)):
+        return "missing"
+
+    normalized_work_order_date = normalize_mfr_date(work_order_value)
+    normalized_purchase_order_date = normalize_mfr_date(purchase_order_value)
+
+    if (normalized_work_order_date is None or normalized_purchase_order_date is None):
+        return "mismatch"
+
+    return (
+        "match"
+        if normalized_work_order_date
+        == normalized_purchase_order_date
+        else "mismatch"
+    )
 
 
 
