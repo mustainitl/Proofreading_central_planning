@@ -11,6 +11,7 @@ from backend.comparison_helpers import (
     full_sales_order,
     is_missing,
     overall_status,
+    product_code_status,
     purchase_order_context,
 )
 
@@ -317,7 +318,7 @@ def compare_po_line(
 
 
 
-# Product Code
+# Product Code (reference) comparison
 # -------------------------------------
 def compare_product_code(
     work_order: dict[str, Any],
@@ -343,7 +344,7 @@ def compare_product_code(
             )
             break
 
-    status = exact_status(
+    status = product_code_status(
         work_order_product_code,
         purchase_order_item_description,
     )

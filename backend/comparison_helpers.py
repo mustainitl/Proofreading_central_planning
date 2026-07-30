@@ -52,6 +52,57 @@ def purchase_order_context(
     )
 
 
+# -----------------------------------------------------------
+# Product Code(reference) comparison helpers
+# -----------------------------------------------------------
+def product_code_status(
+    work_order_value: Any,
+    purchase_order_value: Any,
+) -> str:
+    if is_missing(work_order_value) or is_missing(purchase_order_value):
+        return "missing"
+
+    wo_product_code = str(work_order_value).upper()
+    po_item_description = str(purchase_order_value).upper()
+
+    parts = {}
+
+    for part in wo_product_code.split():
+        if part == "/":
+            continue
+
+        parts[part] = list(
+            dict.fromkeys(
+                [
+                    part,
+                    part.replace("/", ""),
+                    part.replace("-", ""),
+                    part.replace("/", "").replace("-", ""),
+                ]
+            )
+        )
+
+    if not parts:
+        return "missing"
+
+    po_tokens = po_item_description.split()
+
+    is_match = all(
+        any(value in po_tokens for value in possible_values)
+        for possible_values in parts.values()
+    )
+
+    return "match" if is_match else "mismatch"
+
+
+
+
+
+
+
+
+
+
 def overall_status(statuses: list[str]) -> str:
     if not statuses:
         return "missing"
@@ -66,3 +117,6 @@ def overall_status(statuses: list[str]) -> str:
         return "missing"
 
     return "match"
+
+
+
