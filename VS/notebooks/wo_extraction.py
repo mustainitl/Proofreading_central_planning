@@ -293,6 +293,17 @@ rules = [
 ]
 
 
+
+"body",
+"57% cotton",
+"38% modal",
+"5% elastane",
+"elastic",
+"48% polyamide",
+"37% polyester",
+"15% elastane",
+
+
 def extract_work_orders(pdf_path):
     # Run full extraction process
     extracted_texts, size_age_rows = extract_pdf_once(pdf_path)

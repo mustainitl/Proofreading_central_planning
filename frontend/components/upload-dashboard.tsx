@@ -17,6 +17,7 @@ type ComparisonRow = {
   purchase_order: string | number | null;
   booking_sheet: string | number | null;
   status: ComparisonStatus;
+  message?: string | null;
 };
 
 type WorkOrderResult = {
@@ -24,6 +25,7 @@ type WorkOrderResult = {
   source_file: string;
   status: ComparisonStatus;
   rows: ComparisonRow[];
+  size_rows: ComparisonRow[];
 };
 
 type ExtractionResult = {
@@ -291,17 +293,21 @@ function displayValue(value: string | number | null) {
   return value === null || value === "" ? "-" : String(value);
 }
 
-function ComparisonTable({ result }: { result: WorkOrderResult }) {
+
+function ResultRowsTable({
+  title,
+  rows,
+}: {
+  title: string;
+  rows: ComparisonRow[];
+}) {
+  if (rows.length === 0) {
+    return null;
+  }
+
   return (
-    <article className="comparison-card">
-      <div className="comparison-card-heading">
-        <div>
-          <span>Work order</span>
-          <h3>{result.work_order_no}</h3>
-          <p>{result.source_file}</p>
-        </div>
-        <StatusBadge status={result.status} />
-      </div>
+    <section className="comparison-table-section">
+      <h4>{title}</h4>
 
       <div className="comparison-table-scroll">
         <table className="comparison-table">
@@ -314,21 +320,54 @@ function ComparisonTable({ result }: { result: WorkOrderResult }) {
               <th>Status</th>
             </tr>
           </thead>
+
           <tbody>
-            {result.rows.map((row) => (
-              <tr key={row.field}>
+            {rows.map((row, index) => (
+              <tr key={`${row.field}-${index}`}>
                 <th scope="row">{row.field}</th>
                 <td>{displayValue(row.work_order)}</td>
                 <td>{displayValue(row.purchase_order)}</td>
                 <td>{displayValue(row.booking_sheet)}</td>
                 <td>
                   <StatusBadge status={row.status} />
+
+                  {row.message ? (
+                    <p className="comparison-message">
+                      {row.message}
+                    </p>
+                  ) : null}
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+    </section>
+  );
+}
+
+
+function ComparisonTable({ result }: { result: WorkOrderResult }) {
+  return (
+    <article className="comparison-card">
+      <div className="comparison-card-heading">
+        <div>
+          <span>Work order</span>
+          <h3>{result.work_order_no}</h3>
+          <p>{result.source_file}</p>
+        </div>
+        <StatusBadge status={result.status} />
+      </div>
+
+      <ResultRowsTable
+        title="General comparisons"
+        rows={result.rows}
+      />
+
+      <ResultRowsTable
+        title="Size, PO line and quantity comparisons"
+        rows={result.size_rows}
+      />
     </article>
   );
 }

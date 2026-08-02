@@ -830,6 +830,19 @@ svg {
   overflow-x: auto;
 }
 
+.comparison-table-section + .comparison-table-section {
+  border-top: 12px solid #f1f4f8;
+}
+
+.comparison-table-section h4 {
+  margin: 0;
+  padding: 13px 17px;
+  border-bottom: 1px solid #e7ecf2;
+  color: #34465e;
+  background: #f8fafc;
+  font-size: 13px;
+}
+
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
@@ -870,6 +883,13 @@ svg {
   text-transform: uppercase;
 }
 
+.comparison-message {
+  margin: 7px 0 0;
+  color: #b42318;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
 .comparison-table thead th:nth-child(1) {
   width: 14%;
 }
@@ -898,6 +918,7 @@ svg {
 
 .comparison-table tbody td {
   color: #526177;
+  white-space: pre-line;
 }
 
 .comparison-table tbody tr:hover th,
