@@ -4,8 +4,6 @@ import pdfplumber
 import sys
 from pathlib import Path
 
-PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "BD01529397W_workorder.pdf"
-
 
 # Helper functions for cleaning and validating data
 def clean_cell(value):
@@ -148,7 +146,23 @@ def sequential_extract(items, rules):
             if not match:
                 continue
 
-            result[key] = clean_value(match.group(1))
+            if key == "customer_order_no":
+                captured_value = "".join(
+                    group
+                    for group in match.groups()
+                    if group
+                )
+
+                if not re.fullmatch(
+                    r"\d{10}-\d{10}/\d{2}-\d{10}-\d+",
+                    captured_value,
+                ):
+                    continue
+
+                result[key] = clean_value(captured_value)
+
+            else:
+                result[key] = clean_value(match.group(1))
 
             cursor_item = item_index
             cursor_char = start_char + match.end()
@@ -170,10 +184,33 @@ rules = [
             r"Customer:\s*(.+)",
         ],
     },
+    # {
+    #     "key": "customer_order_no",
+    #     "patterns": [
+    #         r"Customer Order No:\s*([0-9/-]+)",
+    #     ],
+    # },
     {
         "key": "customer_order_no",
         "patterns": [
-            r"Customer Order No:\s*([0-9/-]+)",
+            # Normal one-line layout
+            (
+                r"Customer Order No:\s*"
+                r"(\d{10}-\d{10}/\d{2}-\d{10}-\d+)"
+            ),
+
+            # Split layout
+            (
+                r"(?<![A-Za-z0-9])"
+                r"([0-9][0-9/-]*)"
+                r"(?![A-Za-z0-9])"
+                r"\s*Customer Order No:\s*"
+                r".*?"
+                r"(?<![A-Za-z0-9])"
+                r"([/-]*[0-9][0-9/-]*)"
+                r"(?![A-Za-z0-9])"
+                r"\s*\Z"
+            ),
         ],
     },
     {
@@ -333,6 +370,12 @@ def extract_work_orders(pdf_path):
 
 
 def main():
+    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "BD01529397W_workorder.pdf"
+    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01550748W.pdf"
+    PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01538728W_work_order.pdf"
+
+
+
     result = extract_work_orders(PDF_PATH)
     sys.stdout.reconfigure(encoding="utf-8")
     print(json.dumps(result, indent=4, ensure_ascii=False))
