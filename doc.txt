@@ -1,0 +1,74 @@
+Extracted Texts:
+WORKS ORDER:
+Chain: VICTORIA'S SECRET
+Order Header Details:
+BD01550748W Works Order Order Dihan Ahmed Bangladesh | Confirmed No: (Revised) EMail: dihan.ahmed@itl-group.com.bd By: To: INTERNATIONAL TRIMMINGS & LABELS BANGLADESH PRIVATE LIMITED. Customer: Mas Intimates Bangladesh Private Limited [M096] Customer Order No: 4502901871-1001670562/10-2001289779-40.
+ITL BD PRODUCTION SPECIFICATIONS:
+ITL BD Material Code: Finishing Material Code: Finishing Information: Production Department: Production to Follow: Special Note:
+Order Delivery Details:
+PO Received Date: 2026/06/30 Order Date: 2026/07/01 Delivery Date (ex 2026/07/18 factory): Customer Delivery Mas Intimates Bangladesh Private Limited Name: Mas Intimates Bangladesh Private Limited,SFB No. 1,KEPZ, North Patenga, Chittagong-4204, , Deliver To: Bangladesh Delivery Method: ITL Delivery Account No: ITL Contact: Mas Intimates Bangladesh Private Limited Comments / Special Requirements / Delivery Instructions:
+Product Details:
+VS Stores: Stores & Catalog Delivery Date (ex 2026/07/18 factory): VS PO Number: 4502901871 Season: HOLIDAY Fabric Name:
+Panties/Swim Bottoms
+Line No
+Order Quantity
+M/170/72A
+3672
+L/G/170/80A
+746
+XL/XG/EG/170/90A
+532
+Care Instructions: Care Instruction Set 1: MWW001 Care Phrases: Care Instruction Set 2: Care Phrases: Care Instruction Set 3: Care Phrases: Care Instruction Set 4: Care Phrases: Care Instruction Set 5: Care Phrases: Care Instruction Set 6: Care Phrases: Care Instruction Set 7: Care Phrases:
+Care Instruction Set 1: MWW001 Care Phrases:
+Care Instruction Set 2: Care Phrases:
+Care Instruction Set 3: Care Phrases:
+Care Instruction Set 4: Care Phrases:
+Care Instruction Set 5: Care Phrases:
+Care Instruction Set 6: Care Phrases:
+Care Instruction Set 7: Care Phrases:
+End of Works Order:
+*BD01550748W*
+[
+    {
+        "work_order_no": "BD01550748W",
+        "work_order_exists_in_block": true,
+        "customer": "Mas Intimates Bangladesh Private Limited",
+        "customer_order_no": "4502901871-1001670562/10-2001289779-40",
+        "vs_po_number": "4502901871",
+        "line_item": "",
+        "so_number": "",
+        "item_code": "",
+        "product_code": "",
+        "silhouette": "",
+        "quantity": "",
+        "size_id": "",
+        "itl_factory_code": "",
+        "vsd": "",
+        "vss": "",
+        "rn": "",
+        "ca": "",
+        "factory_id": "",
+        "date_of_mfr": "",
+        "country_of_origin": "",
+        "additional_instructions": "",
+        "garment_components": "",
+        "care_instructions_set_1": "MWW001",
+        "size_age_breakdown": [
+            {
+                "Panties/Swim Bottoms": "M/170/72A",
+                "Line No": "",
+                "Order Quantity": "3672"
+            },
+            {
+                "Panties/Swim Bottoms": "L/G/170/80A",
+                "Line No": "",
+                "Order Quantity": "746"
+            },
+            {
+                "Panties/Swim Bottoms": "XL/XG/EG/170/90A",
+                "Line No": "",
+                "Order Quantity": "532"
+            }
+        ]
+    }
+]

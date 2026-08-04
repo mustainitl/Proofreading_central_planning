@@ -1,19 +1,22 @@
-import re
 import json
-import pdfplumber
+import re
 import sys
 from pathlib import Path
 
+import pdfplumber
 
-# Helper functions for cleaning and validating data
+
 def clean_cell(value):
     return " ".join((value or "").split()).strip()
 
+
 def clean_value(value):
-    return " ".join(value.split()).strip()
+    return " ".join((value or "").split()).strip()
+
 
 def is_number(value):
     return clean_cell(value).replace(",", "").isdigit()
+
 
 def clean_garment_components(value):
     value = value.replace("&", "")
@@ -60,14 +63,11 @@ def extract_pdf_once(pdf_path):
             if page_text:
                 document_pages.append(page_text)
 
-            tables = page.extract_tables()
-
-            for table in tables:
+            for table in page.extract_tables():
                 for row in table:
                     row_start_pos = len(extracted_texts)
                     cells = [clean_cell(cell) for cell in row]
 
-                    # 1. Plain text extraction from table cells
                     for cell in cells:
                         if cell:
                             extracted_texts.append(cell)
@@ -75,7 +75,6 @@ def extract_pdf_once(pdf_path):
                     if not any(cells):
                         continue
 
-                    # 2. Detect Size/Age Breakdown header dynamically
                     if cells[-1] == "Order Quantity":
                         size_header = cells
                         collecting_size = True
@@ -84,62 +83,61 @@ def extract_pdf_once(pdf_path):
                     if not collecting_size or size_header is None:
                         continue
 
-                    # 3. Skip repeated header if table continues on another page
                     if cells == size_header:
                         continue
 
-                    # 4. Data row must match header length
                     if len(cells) != len(size_header):
                         continue
 
-                    # 5. Last column must be numeric quantity
                     if not is_number(cells[-1]):
                         continue
 
-                    size_age_rows.append({
-                        "position": row_start_pos,
-                        "data": dict(zip(size_header, cells)),
-                    })
+                    size_age_rows.append(
+                        {
+                            "position": row_start_pos,
+                            "data": dict(zip(size_header, cells)),
+                        }
+                    )
 
     document_text = "\n".join(document_pages)
-
     return document_text, extracted_texts, size_age_rows
 
-# Split work orders based on "End of Works Order:" and extract relevant data
-def split_work_orders(extracted_texts):
+
+def split_table_work_orders(extracted_texts):
     work_orders = []
-
     start_pos = 0
-    i = 0
+    index = 0
 
-    while i < len(extracted_texts) - 1:
-        current_item = extracted_texts[i]
-        next_item = extracted_texts[i + 1]
+    while index < len(extracted_texts) - 1:
+        current_item = extracted_texts[index]
+        next_item = extracted_texts[index + 1]
 
         if "End of Works Order:" not in current_item:
-            i += 1
+            index += 1
             continue
 
         work_order_match = re.search(r"\*([^*]+)\*", next_item)
 
         if not work_order_match:
-            i += 1
+            index += 1
             continue
 
         work_order_no = work_order_match.group(1).strip()
-        block_items = extracted_texts[start_pos:i + 2]
+        block_items = extracted_texts[start_pos:index + 2]
         block_text = "\n".join(block_items)
 
-        work_orders.append({
-            "work_order_no": work_order_no,
-            "work_order_exists_in_block": work_order_no in block_text,
-            "start_pos": start_pos,
-            "end_pos": i + 1,
-            "items": block_items,
-        })
+        work_orders.append(
+            {
+                "work_order_no": work_order_no,
+                "work_order_exists_in_block": work_order_no in block_text,
+                "start_pos": start_pos,
+                "end_pos": index + 1,
+                "items": block_items,
+            }
+        )
 
-        start_pos = i + 2
-        i = start_pos
+        start_pos = index + 2
+        index = start_pos
 
     return work_orders
 
@@ -165,12 +163,13 @@ def split_text_work_orders(document_text):
         )
         block_text = document_text[start_pos:match.end()]
 
-        work_orders.append({
-            "work_order_no": work_order_no,
-            "work_order_exists_in_block": work_order_no in block_text,
-            "items": [block_text],
-            "text": block_text,
-        })
+        work_orders.append(
+            {
+                "work_order_no": work_order_no,
+                "work_order_exists_in_block": work_order_no in block_text,
+                "text": block_text,
+            }
+        )
 
         start_pos = match.end()
 
@@ -214,81 +213,71 @@ def extract_size_age_breakdown_from_text(block_text):
         row_match = re.match(r"^(.*?)\s+(\d[\d,]*)$", line)
 
         if size_header and row_match:
-            size_rows.append({
-                size_header: row_match.group(1).strip(),
-                "Line No": "",
-                "Order Quantity": row_match.group(2).replace(",", ""),
-            })
+            size_rows.append(
+                {
+                    size_header: row_match.group(1).strip(),
+                    "Line No": "",
+                    "Order Quantity": row_match.group(2).replace(",", ""),
+                }
+            )
 
     return size_rows
 
 
-# Sequentially extract data based on defined rules
 def find_with_patterns(text, patterns):
     for pattern in patterns:
-        match = re.search(pattern, text, flags=re.MULTILINE | re.DOTALL)
+        match = re.search(
+            pattern,
+            text,
+            flags=re.MULTILINE | re.DOTALL,
+        )
+
         if match:
             return match
 
     return None
 
-def sequential_extract(items, rules):
-    result = {}
 
-    cursor_item = 0
-    cursor_char = 0
+def extract_fields_independently(block_text, rules):
+    """
+    Every rule searches the complete current work-order block.
+
+    There is no shared cursor, so a missing or reordered field does not
+    change where the following field starts searching.
+    """
+    result = {}
 
     for rule in rules:
         key = rule["key"]
-        patterns = rule["patterns"]
+        match = find_with_patterns(block_text, rule["patterns"])
 
-        found = False
+        if not match:
+            result[key] = ""
+            continue
 
-        for item_index in range(cursor_item, len(items)):
-            item = items[item_index]
+        if key == "customer_order_no":
+            captured_value = "".join(
+                group
+                for group in match.groups()
+                if group
+            )
 
-            if item_index == cursor_item:
-                start_char = cursor_char
-            else:
-                start_char = 0
-
-            search_text = item[start_char:]
-            match = find_with_patterns(search_text, patterns)
-
-            if not match:
+            if not re.fullmatch(
+                r"\d{10}-\d{10}/\d{2}-\d{10}-\d+",
+                captured_value,
+            ):
+                result[key] = ""
                 continue
 
-            if key == "customer_order_no":
-                captured_value = "".join(
-                    group
-                    for group in match.groups()
-                    if group
-                )
+            result[key] = clean_value(captured_value)
+            continue
 
-                if not re.fullmatch(
-                    r"\d{10}-\d{10}/\d{2}-\d{10}-\d+",
-                    captured_value,
-                ):
-                    continue
-
-                result[key] = clean_value(captured_value)
-
-            else:
-                result[key] = clean_value(match.group(1))
-
-            cursor_item = item_index
-            cursor_char = start_char + match.end()
-
-            found = True
-            break
-
-        if not found:
-            result[key] = ""
+        result[key] = clean_value(match.group(1))
 
     return result
 
 
-rules = [
+RULES = [
     {
         "key": "customer",
         "patterns": [
@@ -296,22 +285,13 @@ rules = [
             r"Customer:\s*(.+)",
         ],
     },
-    # {
-    #     "key": "customer_order_no",
-    #     "patterns": [
-    #         r"Customer Order No:\s*([0-9/-]+)",
-    #     ],
-    # },
     {
         "key": "customer_order_no",
         "patterns": [
-            # Normal one-line layout
             (
                 r"Customer Order No:\s*"
                 r"(\d{10}-\d{10}/\d{2}-\d{10}-\d+)"
             ),
-
-            # Split layout
             (
                 r"(?<![A-Za-z0-9])"
                 r"([0-9][0-9/-]*)"
@@ -383,7 +363,6 @@ rules = [
         "key": "vsd",
         "patterns": [
             r"VSD#:\s*(\d{6}-[A-Z]{3})",
-            # r"VSD#:\s*(\d{6})",
         ],
     },
     {
@@ -443,15 +422,11 @@ rules = [
 ]
 
 
-
 def extract_work_orders(pdf_path):
     document_text, extracted_texts, size_age_rows = extract_pdf_once(pdf_path)
 
-    # Plain text is the primary source for labelled scalar fields.
-    work_order_blocks = split_text_work_orders(document_text)
-
-    # Tables remain the primary source for the structured size rows.
-    table_blocks = split_work_orders(extracted_texts)
+    text_blocks = split_text_work_orders(document_text)
+    table_blocks = split_table_work_orders(extracted_texts)
     size_rows_by_work_order = {}
 
     for table_block in table_blocks:
@@ -474,29 +449,33 @@ def extract_work_orders(pdf_path):
 
     all_work_orders = []
 
-    for block in work_order_blocks:
+    for block in text_blocks:
         result = {
             "work_order_no": block["work_order_no"],
             "work_order_exists_in_block": block["work_order_exists_in_block"],
         }
 
-        if block["work_order_exists_in_block"]:
-            extracted_values = sequential_extract(block["items"], rules)
+        if not block["work_order_exists_in_block"]:
+            result["error"] = "Work order number not found inside this block"
+            all_work_orders.append(result)
+            continue
 
-            if extracted_values.get("garment_components"):
-                extracted_values["garment_components"] = clean_garment_components(
-                    extracted_values["garment_components"]
-                )
+        extracted_values = extract_fields_independently(
+            block["text"],
+            RULES,
+        )
 
-            result.update(extracted_values)
-
-            result["size_age_breakdown"] = (
-                size_rows_by_work_order.get(block["work_order_no"])
-                or extract_size_age_breakdown_from_text(block["text"])
+        if extracted_values.get("garment_components"):
+            extracted_values["garment_components"] = clean_garment_components(
+                extracted_values["garment_components"]
             )
 
-        else:
-            result["error"] = "Work order number not found inside this block"
+        result.update(extracted_values)
+
+        result["size_age_breakdown"] = (
+            size_rows_by_work_order.get(block["work_order_no"])
+            or extract_size_age_breakdown_from_text(block["text"])
+        )
 
         all_work_orders.append(result)
 
@@ -504,41 +483,46 @@ def extract_work_orders(pdf_path):
 
 
 def main():
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "BD01529397W_workorder.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01425038W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01425042W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01425044W.pdf"
-    # # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01538728W_work_order.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01538742W_work_order.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01538806W_work_order.pdf"
-    # # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01550748W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01550768W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01550770W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01556226W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01556227W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01556235W.pdf"
-    
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01468527W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01468626W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01470623W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01470631W.pdf"
-    # PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01468543W.pdf"
-    PDF_PATH = Path(__file__).resolve().parent.parent / "input_files" / "work_orders" / "BD01470576W.pdf"
+    vs_directory = Path(__file__).resolve().parent.parent
 
+    pdf_paths = [
+        vs_directory / "input_files" / "BD01529397W_workorder.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01425038W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01425042W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01425044W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01538728W_work_order.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01538742W_work_order.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01538806W_work_order.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01550748W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01550768W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01550770W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01556226W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01556227W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01556235W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01468527W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01468626W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01470623W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01470631W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01468543W.pdf",
+        vs_directory / "input_files" / "work_orders" / "BD01470576W.pdf",
+    ]
 
+    output = {}
 
-    result = extract_work_orders(PDF_PATH)
-    sys.stdout.reconfigure(encoding="utf-8")
-    print(json.dumps(result, indent=4, ensure_ascii=False))
+    for pdf_path in pdf_paths:
+        if not pdf_path.exists():
+            output[pdf_path.name] = {
+                "error": f"PDF file not found: {pdf_path}"
+            }
+            continue
+
+        output[pdf_path.name] = extract_work_orders(pdf_path)
+
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+
+    print(json.dumps(output, indent=4, ensure_ascii=False))
 
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
