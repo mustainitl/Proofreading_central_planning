@@ -55,23 +55,62 @@ def purchase_order_context(
 # -----------------------------------------------------------
 # Product Code(reference) comparison helpers
 # -----------------------------------------------------------
+# def product_code_status(
+#     work_order_value: Any,
+#     purchase_order_value: Any,
+# ) -> str:
+#     if is_missing(work_order_value) or is_missing(purchase_order_value):
+#         return "missing"
+
+#     wo_product_code = str(work_order_value).upper()
+#     po_item_description = str(purchase_order_value).upper()
+
+#     parts = {}
+
+#     for part in wo_product_code.split():
+#         if part == "/":
+#             continue
+
+#         parts[part] = list(
+#             dict.fromkeys(
+#                 [
+#                     part,
+#                     part.replace("/", ""),
+#                     part.replace("-", ""),
+#                     part.replace("/", "").replace("-", ""),
+#                 ]
+#             )
+#         )
+
+#     if not parts:
+#         return "missing"
+
+#     po_tokens = po_item_description.split()
+
+#     is_match = all(
+#         any(value in po_tokens for value in possible_values)
+#         for possible_values in parts.values()
+#     )
+
+#     return "match" if is_match else "mismatch"
+
 def product_code_status(
-    work_order_value: Any,
-    purchase_order_value: Any,
-) -> str:
+    work_order_value,
+    purchase_order_value,
+):
     if is_missing(work_order_value) or is_missing(purchase_order_value):
         return "missing"
 
     wo_product_code = str(work_order_value).upper()
     po_item_description = str(purchase_order_value).upper()
 
-    parts = {}
+    wo_parts = {}
 
     for part in wo_product_code.split():
         if part == "/":
             continue
 
-        parts[part] = list(
+        wo_parts[part] = list(
             dict.fromkeys(
                 [
                     part,
@@ -82,17 +121,60 @@ def product_code_status(
             )
         )
 
-    if not parts:
+    if not wo_parts:
         return "missing"
 
-    po_tokens = po_item_description.split()
+    po_parts = {}
+
+    for part in re.split(r"[\s-]+", po_item_description):
+        if not part or part == "/":
+            continue
+
+        po_parts[part] = list(
+            dict.fromkeys(
+                [
+                    part,
+                    part.replace("/", ""),
+                    part.replace("-", ""),
+                    part.replace("/", "").replace("-", ""),
+                ]
+            )
+        )
+
+    po_tokens = {
+        value
+        for possible_values in po_parts.values()
+        for value in possible_values
+    }
+
+    print("WO Parts:", wo_parts)
+    print("PO Parts:", po_parts)
+    print("PO Tokens:", po_tokens)
+
+    for part, possible_values in wo_parts.items():
+        print(f"\nChecking: {part}")
+        print("Possible values:", possible_values)
+        print(
+            "Matched:",
+            [
+                value
+                for value in possible_values
+                if value in po_tokens
+            ],
+        )
 
     is_match = all(
-        any(value in po_tokens for value in possible_values)
-        for possible_values in parts.values()
+        any(
+            value in po_tokens
+            for value in possible_values
+        )
+        for possible_values in wo_parts.values()
     )
 
+    print("\nFinal Result:", is_match)
+
     return "match" if is_match else "mismatch"
+
 
 
 
@@ -128,7 +210,11 @@ def vsd_status(
         if token != "/"
     ]
 
-    is_match = (normalized_work_order_vsd in normalized_purchase_order_tokens)
+    print("Normalized Work Order VSD:", normalized_work_order_vsd)
+    print("Normalized PO Tokens:", normalized_purchase_order_tokens)
+
+    # is_match = (normalized_work_order_vsd in normalized_purchase_order_tokens)
+    is_match = any(normalized_work_order_vsd in text for text in normalized_purchase_order_tokens)
 
     return "match" if is_match else "mismatch"
 
