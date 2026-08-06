@@ -300,7 +300,7 @@ def care_instructions_set_status(
     #     .upper()
     #     .split()
     # )
-    purchase_order_tokens = re.split(r"[\s-]+", purchase_order_item_description.upper().strip())
+    purchase_order_tokens = re.split(r"[\s_-]+", purchase_order_item_description.upper().strip())
 
     return (
         "match"
