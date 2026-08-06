@@ -12,7 +12,8 @@ from VS.notebooks.po_extraction import (
     extract_items,
     extract_po_details,
 )
-from VS.notebooks.wo_extraction import extract_work_orders
+# from VS.notebooks.wo_extraction import extract_work_orders
+from VS.notebooks.not_sequential_wo_extraction import extract_work_orders
 
 
 app = FastAPI(

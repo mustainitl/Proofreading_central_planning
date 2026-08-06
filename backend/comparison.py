@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 import json
+import re
 
 from backend.comparison_helpers import (
     country_of_origin_status,
@@ -801,14 +802,10 @@ def compare_garment_components(
 def compare_size_age_breakdown(
     work_order: dict[str, Any],
     purchase_order: dict[str, Any],
-    comparison_context: dict[str, Any],
 ) -> list[dict[str, Any]]:
-    work_order_item_code = str(
-        work_order.get("item_code") or ""
-    ).strip()
 
+    work_order_item_code = str(work_order.get("item_code") or "").strip()
     work_order_sales_order = full_sales_order(work_order.get("so_number"))
-
     work_order_po_line = work_order.get("line_item")
     work_order_size_rows = (work_order.get("size_age_breakdown") or [])
 
@@ -858,10 +855,22 @@ def compare_size_age_breakdown(
             else None
         )
 
-        # "L | G | 170/80A" becomes "L" for matching.
+        # # # "L | G | 170/80A" becomes "L" for matching.
+        # work_order_primary_size = (
+        #     str(work_order_full_size)
+        #     .split("|", 1)[0]
+        #     .strip()
+        #     .upper()
+        #     if not is_missing(work_order_full_size)
+        #     else None
+        # )
+
         work_order_primary_size = (
-            str(work_order_full_size)
-            .split("|", 1)[0]
+            re.split(
+                r"\s*[|/]\s*",
+                str(work_order_full_size),
+                maxsplit=1,
+            )[0]
             .strip()
             .upper()
             if not is_missing(work_order_full_size)
@@ -952,7 +961,7 @@ def compare_all_fields(
         compare_garment_components(work_order, purchase_order, comparison_context),
     ]
 
-    size_rows = compare_size_age_breakdown(work_order, purchase_order, comparison_context)
+    size_rows = compare_size_age_breakdown(work_order, purchase_order)
 
 
     # Keep booking_sheets in the real context, but do not print
